@@ -1,0 +1,1917 @@
+.hifi {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.hifi .hero-section-mobile {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 812px;
+  background-color: var(--black);
+}
+
+.hifi .nav {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 0px 143px;
+  position: absolute;
+  top: 60px;
+  left: 0;
+}
+
+.hifi .logo {
+  width: 93px;
+  height: 50px;
+  margin-right: -4.00px;
+  position: relative;
+  aspect-ratio: 1.86;
+}
+
+.hifi .hero-content-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 344px;
+  align-items: flex-start;
+  gap: 16px;
+  position: absolute;
+  top: 125px;
+  left: calc(50.00% - 172px);
+}
+
+.hifi .content-google {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.hifi .text-content-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.hifi .awards-tag {
+  position: relative;
+  width: 144px;
+  flex: 0 0 auto;
+}
+
+.hifi .text-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: -0.33px;
+  line-height: 32px;
+}
+
+.hifi .expert-plumbers-on {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 500;
+  color: transparent;
+  font-size: 38px;
+  text-align: center;
+  letter-spacing: -0.76px;
+  line-height: 44px;
+}
+
+.hifi .span {
+  color: #fad66d;
+  letter-spacing: -0.29px;
+}
+
+.hifi .text-wrapper-2 {
+  color: #ffffff;
+  letter-spacing: -0.29px;
+}
+
+.hifi .frame {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.hifi .div {
+  display: inline-flex;
+  align-items: center;
+  gap: 3.77px;
+  padding: 8px 16px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: var(--transbg);
+  border-radius: 8px;
+  border: 0.75px solid;
+  border-color: var(--stroke);
+}
+
+.hifi .group {
+  position: relative;
+  width: 26px;
+  height: 26px;
+}
+
+.hifi .frame-2 {
+  display: flex;
+  flex-direction: column;
+  width: 227px;
+  align-items: flex-start;
+  gap: 2px;
+  position: relative;
+}
+
+.hifi .frame-3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.hifi .text-wrapper-3 {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.75px;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 500;
+  color: var(--gray-200);
+  font-size: 10px;
+  text-align: center;
+  letter-spacing: 0.05px;
+  line-height: 14px;
+  white-space: nowrap;
+}
+
+.hifi .text-wrapper-4 {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.75px;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--gray-300);
+  font-size: 10px;
+  text-align: center;
+  letter-spacing: 0.05px;
+  line-height: 14px;
+  white-space: nowrap;
+}
+
+.hifi .points-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6.03px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.hifi .text-wrapper-5 {
+  margin-top: -0.30px;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: var(--yellow);
+  font-size: 16px;
+  text-align: center;
+  line-height: 24px;
+  position: relative;
+  width: fit-content;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.hifi .stars {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.hifi .star {
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+
+.hifi .img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 4.45%;
+  left: 6.51%;
+}
+
+.hifi .button-mobile {
+  display: flex;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 12px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  background-color: var(--yellow);
+  border-radius: 48px;
+  overflow: hidden;
+}
+
+.hifi .call-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6.4px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: var(--black);
+  border-radius: 80px;
+}
+
+.hifi .telephone-call {
+  position: relative;
+  width: 19.2px;
+  height: 19.2px;
+  aspect-ratio: 1;
+}
+
+.hifi .vector {
+  position: absolute;
+  width: 87.50%;
+  height: 87.50%;
+  top: 6.25%;
+  left: 6.25%;
+}
+
+.hifi .vector-2 {
+  position: absolute;
+  width: 25.00%;
+  height: 25.00%;
+  top: 21.87%;
+  left: 53.13%;
+}
+
+.hifi .vector-3 {
+  position: absolute;
+  width: 40.63%;
+  height: 40.63%;
+  top: 6.25%;
+  left: 53.13%;
+}
+
+.hifi .text {
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 500;
+  color: #11171b;
+  font-size: 14px;
+  line-height: 18px;
+  position: relative;
+  width: fit-content;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.hifi .leading-magnet {
+  display: flex;
+  width: 375px;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 12px 10px;
+  position: absolute;
+  top: 437px;
+  left: calc(50.00% - 188px);
+  background-color: var(--yellow);
+  box-shadow: 0px 4px 10.1px #f7c43112;
+}
+
+.hifi .element-off-for-your {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.53px;
+  margin-left: -125.50px;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 400;
+  color: var(--black);
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.hifi .text-wrapper-6 {
+  font-weight: 500;
+  letter-spacing: -0.01px;
+  line-height: 24px;
+}
+
+.hifi .text-wrapper-7 {
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 14px;
+  letter-spacing: -0.01px;
+  line-height: 20px;
+}
+
+.hifi .text-wrapper-8 {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+.hifi .p {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.53px;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 400;
+  color: var(--black);
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.hifi .element-off-for-your-2 {
+  margin-right: -125.50px;
+  position: relative;
+  width: fit-content;
+  margin-top: -0.53px;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 400;
+  color: var(--black);
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.hifi .snake-team-wrapper {
+  position: absolute;
+  top: 485px;
+  left: 0;
+  width: 375px;
+  height: 327px;
+  display: flex;
+  align-items: center;
+  background-color: #e2e2e2;
+}
+
+.hifi .snake-team {
+  height: 327px;
+  width: 375px;
+  aspect-ratio: 1;
+}
+
+.hifi .contact-us-mobile {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 1093px;
+  background-color: #ffffff;
+}
+
+.hifi .screenshot {
+  position: relative;
+  top: 40px;
+  left: 16px;
+  width: 343px;
+  height: 1014px;
+}
+
+.hifi .screenshot-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 341px;
+  height: 668px;
+  aspect-ratio: 0.51;
+}
+
+.hifi .screenshot-3 {
+  position: absolute;
+  top: 662px;
+  left: 0;
+  width: 343px;
+  height: 351px;
+  aspect-ratio: 0.98;
+}
+
+.hifi .googlr-review-mobile {
+  position: relative;
+  width: 375px;
+  height: 316px;
+  background-color: var(--yellow);
+}
+
+.hifi .google-review-wrap {
+  display: flex;
+  width: 375px;
+  align-items: center;
+  gap: 8px;
+  padding: 0px 8px;
+  position: absolute;
+  top: 110px;
+  left: calc(50.00% - 188px);
+}
+
+.hifi .background-border {
+  position: relative;
+  width: 166.64px;
+  height: 166px;
+  background-color: #ffffff;
+  border-radius: 8.44px;
+  border-top-width: 1.41px;
+  border-top-style: solid;
+  border-right-width: 1.41px;
+  border-right-style: solid;
+  border-left-width: 1.41px;
+  border-left-style: solid;
+}
+
+.hifi .image {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 28px;
+  height: 28px;
+}
+
+.hifi .container {
+  position: absolute;
+  width: calc(100% - 70px);
+  height: calc(100% - 138px);
+  top: 15px;
+  left: 54px;
+  overflow: hidden;
+}
+
+.hifi .div-wrapper {
+  position: absolute;
+  width: 100%;
+  top: calc(50.00% - 14px);
+  left: 1px;
+  height: 15px;
+  display: flex;
+}
+
+.hifi .text-wrapper-9 {
+  width: 28.77px;
+  height: 14.78px;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  line-height: 14.8px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+  font-size: 10.6px;
+  letter-spacing: 0;
+}
+
+.hifi .text-wrapper-10 {
+  position: absolute;
+  top: 14px;
+  left: 1px;
+  width: 90px;
+  height: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #8a8a8a;
+  font-size: 9.1px;
+  letter-spacing: 0;
+  line-height: 12.8px;
+  white-space: nowrap;
+}
+
+.hifi .google {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 14px;
+  height: 14px;
+}
+
+.hifi .google-2 {
+  position: absolute;
+  top: 51px;
+  left: 15px;
+  width: 12px;
+  height: 12px;
+}
+
+.hifi .google-3 {
+  position: absolute;
+  top: 51px;
+  left: 28px;
+  width: 12px;
+  height: 12px;
+}
+
+.hifi .google-4 {
+  position: absolute;
+  top: 51px;
+  left: 41px;
+  width: 12px;
+  height: 12px;
+}
+
+.hifi .google-5 {
+  position: absolute;
+  top: 51px;
+  left: 53px;
+  width: 12px;
+  height: 12px;
+}
+
+.hifi .google-6 {
+  position: absolute;
+  top: 51px;
+  left: 66px;
+  width: 12px;
+  height: 12px;
+}
+
+.hifi .image-2 {
+  position: absolute;
+  top: 53px;
+  left: 84px;
+  width: 11px;
+  height: 11px;
+}
+
+.hifi .container-2 {
+  position: absolute;
+  width: calc(100% - 31px);
+  top: 71px;
+  left: 15px;
+  height: 61px;
+  display: flex;
+}
+
+.hifi .i-have-had-a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130.44px;
+  height: 60.7px;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--black);
+  font-size: 10.6px;
+  letter-spacing: 0;
+  line-height: 15.3px;
+}
+
+.hifi .button-read-more {
+  all: unset;
+  box-sizing: border-box;
+  position: absolute;
+  top: 139px;
+  left: 15px;
+  width: 52px;
+  height: 13px;
+  display: flex;
+  opacity: 0.5;
+}
+
+.hifi .text-wrapper-11 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -0.7px;
+  width: 52.57px;
+  height: 13.37px;
+  margin-left: 0;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--black);
+  font-size: 9.5px;
+  letter-spacing: 0;
+  line-height: 13.3px;
+  white-space: nowrap;
+}
+
+.hifi .container-3 {
+  position: absolute;
+  width: 100%;
+  top: calc(50.00% - 14px);
+  left: 0;
+  height: 15px;
+  display: flex;
+}
+
+.hifi .text-wrapper-12 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48.87px;
+  height: 14.78px;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: var(--black);
+  font-size: 10.6px;
+  letter-spacing: 0;
+  line-height: 14.8px;
+  white-space: nowrap;
+}
+
+.hifi .text-wrapper-13 {
+  position: absolute;
+  top: 14px;
+  left: 0;
+  width: 85px;
+  height: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #8a8a8a;
+  font-size: 9.1px;
+  letter-spacing: 0;
+  line-height: 12.8px;
+  white-space: nowrap;
+}
+
+.hifi .container-4 {
+  position: absolute;
+  width: calc(100% - 31px);
+  top: 71px;
+  left: 15px;
+  height: 61px;
+  display: flex;
+  gap: 17.3px;
+}
+
+.hifi .well-if-you-want-the {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 62.1px;
+  height: 60.7px;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--black);
+  font-size: 10.6px;
+  letter-spacing: 0;
+  line-height: 15.3px;
+}
+
+.hifi .background {
+  margin-top: 1.4px;
+  width: 56.3px;
+  height: 56.3px;
+  display: flex;
+  border-radius: 8.44px;
+  overflow: hidden;
+  background-image: url(./img/background.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.hifi .div-2 {
+  flex: 1;
+  width: 56.3px;
+  border-radius: 8.44px;
+  background-image: url(./img/ab3l90ca8ljhjnlize8jei5vn-pkfzpaactpd6pyd8l7thsnbu3zs-n9x6kum6emdu1bp7jstqhrlj0fhokr0s98xgf5o2udinzvm81n4zseioitd9d4dnspgacjbznizdmmefnzzwi1nogehgi.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.hifi .background-border-2 {
+  margin-right: -156.92px;
+  position: relative;
+  width: 166.64px;
+  height: 166px;
+  background-color: #ffffff;
+  border-radius: 8.44px;
+  border-top-width: 1.41px;
+  border-top-style: solid;
+  border-right-width: 1.41px;
+  border-right-style: solid;
+  border-left-width: 1.41px;
+  border-left-style: solid;
+}
+
+.hifi .image-3 {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 2px;
+  height: 28px;
+}
+
+.hifi .text-wrapper-14 {
+  width: 36.24px;
+  height: 14.78px;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  line-height: 14.8px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+  font-size: 10.6px;
+  letter-spacing: 0;
+}
+
+.hifi .text-wrapper-15 {
+  left: 1px;
+  position: absolute;
+  top: 14px;
+  width: 72px;
+  height: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #8a8a8a;
+  font-size: 9.1px;
+  letter-spacing: 0;
+  line-height: 12.8px;
+  white-space: nowrap;
+}
+
+.hifi .google-7 {
+  position: absolute;
+  top: -2025px;
+  right: 1950px;
+  width: 14px;
+  height: 14px;
+}
+
+.hifi .google-8 {
+  position: absolute;
+  top: 51px;
+  left: 15px;
+  width: 2px;
+  height: 12px;
+}
+
+.hifi .google-9 {
+  position: absolute;
+  top: -1989px;
+  left: -1906px;
+  width: 12px;
+  height: 12px;
+}
+
+.hifi .google-10 {
+  position: absolute;
+  top: -1989px;
+  left: -1893px;
+  width: 12px;
+  height: 12px;
+}
+
+.hifi .google-11 {
+  position: absolute;
+  top: -1989px;
+  left: -1881px;
+  width: 12px;
+  height: 12px;
+}
+
+.hifi .google-12 {
+  position: absolute;
+  top: -1989px;
+  left: -1868px;
+  width: 12px;
+  height: 12px;
+}
+
+.hifi .image-4 {
+  position: absolute;
+  top: -1987px;
+  left: -1851px;
+  width: 11px;
+  height: 11px;
+}
+
+.hifi .very-professional {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 129.08px;
+  height: 30.08px;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--black);
+  font-size: 10.6px;
+  letter-spacing: 0;
+  line-height: 15.3px;
+}
+
+.hifi .background-border-3 {
+  margin-right: -331.56px;
+  position: relative;
+  width: 166.64px;
+  height: 166px;
+  background-color: #ffffff;
+  border-radius: 8.44px;
+  border-top-width: 1.41px;
+  border-top-style: solid;
+  border-right-width: 1.41px;
+  border-right-style: solid;
+  border-left-width: 1.41px;
+  border-left-style: solid;
+}
+
+.hifi .image-5 {
+  position: absolute;
+  top: -2025px;
+  left: -2093px;
+  width: 28px;
+  height: 28px;
+}
+
+.hifi .text-wrapper-16 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43.64px;
+  height: 14.78px;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: var(--black);
+  font-size: 10.6px;
+  letter-spacing: 0;
+  line-height: 14.8px;
+  white-space: nowrap;
+}
+
+.hifi .text-wrapper-17 {
+  left: 0;
+  position: absolute;
+  top: 14px;
+  width: 72px;
+  height: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #8a8a8a;
+  font-size: 9.1px;
+  letter-spacing: 0;
+  line-height: 12.8px;
+  white-space: nowrap;
+}
+
+.hifi .google-13 {
+  position: absolute;
+  top: -2025px;
+  right: 2124px;
+  width: 14px;
+  height: 14px;
+}
+
+.hifi .google-14 {
+  position: absolute;
+  top: -1989px;
+  left: -2093px;
+  width: 12px;
+  height: 12px;
+}
+
+.hifi .google-15 {
+  position: absolute;
+  top: -1989px;
+  left: -2081px;
+  width: 12px;
+  height: 12px;
+}
+
+.hifi .google-16 {
+  position: absolute;
+  top: -1989px;
+  left: -2068px;
+  width: 12px;
+  height: 12px;
+}
+
+.hifi .google-17 {
+  position: absolute;
+  top: -1989px;
+  left: -2055px;
+  width: 12px;
+  height: 12px;
+}
+
+.hifi .google-18 {
+  position: absolute;
+  top: -1989px;
+  left: -2043px;
+  width: 12px;
+  height: 12px;
+}
+
+.hifi .image-6 {
+  position: absolute;
+  top: -1987px;
+  left: -2025px;
+  width: 11px;
+  height: 11px;
+}
+
+.hifi .steve-did-a-great {
+  width: 127.43px;
+  height: 60.7px;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  line-height: 15.3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+  font-size: 10.6px;
+  letter-spacing: 0;
+}
+
+.hifi .background-border-4 {
+  margin-right: -506.20px;
+  position: relative;
+  width: 166.64px;
+  height: 166px;
+  background-color: #ffffff;
+  border-radius: 8.44px;
+  border-top-width: 1.41px;
+  border-top-style: solid;
+  border-right-width: 1.41px;
+  border-right-style: solid;
+  border-left-width: 1.41px;
+  border-left-style: solid;
+}
+
+.hifi .image-7 {
+  position: absolute;
+  top: -2025px;
+  left: -2268px;
+  width: 28px;
+  height: 28px;
+}
+
+.hifi .text-wrapper-18 {
+  width: 39.55px;
+  height: 14.78px;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  line-height: 14.8px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+  font-size: 10.6px;
+  letter-spacing: 0;
+}
+
+.hifi .google-19 {
+  position: absolute;
+  top: -2025px;
+  right: 2299px;
+  width: 14px;
+  height: 14px;
+}
+
+.hifi .google-20 {
+  position: absolute;
+  top: -1989px;
+  left: -2268px;
+  width: 12px;
+  height: 12px;
+}
+
+.hifi .google-21 {
+  position: absolute;
+  top: -1989px;
+  left: -2255px;
+  width: 12px;
+  height: 12px;
+}
+
+.hifi .google-22 {
+  position: absolute;
+  top: -1989px;
+  left: -2243px;
+  width: 12px;
+  height: 12px;
+}
+
+.hifi .google-23 {
+  position: absolute;
+  top: -1989px;
+  left: -2230px;
+  width: 12px;
+  height: 12px;
+}
+
+.hifi .google-24 {
+  position: absolute;
+  top: -1989px;
+  left: -2217px;
+  width: 12px;
+  height: 12px;
+}
+
+.hifi .image-8 {
+  position: absolute;
+  top: -1987px;
+  left: -2200px;
+  width: 11px;
+  height: 11px;
+}
+
+.hifi .just-had-the-best {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 131.7px;
+  height: 60.7px;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--black);
+  font-size: 10.6px;
+  letter-spacing: 0;
+  line-height: 15.3px;
+}
+
+.hifi .background-border-5 {
+  margin-right: -680.84px;
+  position: relative;
+  width: 166.64px;
+  height: 166px;
+  background-color: #ffffff;
+  border-radius: 8.44px;
+  border-top-width: 1.41px;
+  border-top-style: solid;
+  border-right-width: 1.41px;
+  border-right-style: solid;
+  border-left-width: 1.41px;
+  border-left-style: solid;
+}
+
+.hifi .image-9 {
+  position: absolute;
+  top: -2025px;
+  left: -2443px;
+  width: 28px;
+  height: 28px;
+}
+
+.hifi .google-25 {
+  position: absolute;
+  top: -2025px;
+  right: 2474px;
+  width: 14px;
+  height: 14px;
+}
+
+.hifi .google-26 {
+  position: absolute;
+  top: -1989px;
+  left: -2443px;
+  width: 12px;
+  height: 12px;
+}
+
+.hifi .google-27 {
+  position: absolute;
+  top: -1989px;
+  left: -2430px;
+  width: 12px;
+  height: 12px;
+}
+
+.hifi .google-28 {
+  position: absolute;
+  top: -1989px;
+  left: -2417px;
+  width: 12px;
+  height: 12px;
+}
+
+.hifi .google-29 {
+  position: absolute;
+  top: -1989px;
+  left: -2405px;
+  width: 12px;
+  height: 12px;
+}
+
+.hifi .google-30 {
+  position: absolute;
+  top: -1989px;
+  left: -2392px;
+  width: 12px;
+  height: 12px;
+}
+
+.hifi .image-10 {
+  position: absolute;
+  top: -1987px;
+  left: -2374px;
+  width: 11px;
+  height: 11px;
+}
+
+.hifi .text-wrapper-19 {
+  position: absolute;
+  top: 38px;
+  left: 16px;
+  width: 341px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 500;
+  color: #11171b;
+  font-size: 22px;
+  letter-spacing: -0.33px;
+  line-height: 28px;
+}
+
+.hifi .service-mobile {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 40px 16px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: var(--black);
+}
+
+.hifi .title {
+  width: 335px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.hifi .text-wrapper-20 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 22px;
+  letter-spacing: -0.33px;
+  line-height: 28px;
+}
+
+.hifi .text-wrapper-21 {
+  position: relative;
+  align-self: stretch;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: -0.08px;
+  line-height: 24px;
+}
+
+.hifi .service-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 343px;
+  align-items: flex-start;
+  gap: 14px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.hifi .service-card-mobile {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 14px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: var(--transbg);
+  border-radius: 16px;
+  border: 1px solid;
+  border-color: var(--gray-800);
+}
+
+.hifi .service-card-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.hifi .img-2 {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  aspect-ratio: 1;
+}
+
+.hifi .text-wrapper-22 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  width: 267px;
+  margin-top: -1.00px;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 500;
+  color: var(--gray-50);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+.hifi .simulation {
+  background-color: #ffffff40;
+  border-radius: 666.67px;
+  overflow: hidden;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  aspect-ratio: 1;
+}
+
+.hifi .hot-water {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.hifi .vector-4 {
+  position: absolute;
+  width: 78.98%;
+  height: 63.22%;
+  top: 20.90%;
+  left: 13.62%;
+}
+
+.hifi .vector-5 {
+  position: absolute;
+  width: 84.93%;
+  height: 33.73%;
+  top: 62.82%;
+  left: 7.40%;
+}
+
+.hifi .vector-6 {
+  position: absolute;
+  width: 52.10%;
+  height: 31.38%;
+  top: 3.45%;
+  left: 13.62%;
+}
+
+.hifi .why-mobile {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 40px 16px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: #ffffff;
+}
+
+.hifi .frame-4 {
+  display: flex;
+  flex-direction: column;
+  width: 343px;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.hifi .title-2 {
+  align-self: stretch;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.hifi .text-wrapper-23 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 500;
+  color: var(--black);
+  font-size: 22px;
+  letter-spacing: -0.33px;
+  line-height: 28px;
+}
+
+.hifi .text-wrapper-24 {
+  position: relative;
+  align-self: stretch;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--black);
+  font-size: 16px;
+  letter-spacing: -0.08px;
+  line-height: 24px;
+}
+
+.hifi .wrap-tag {
+  display: flex;
+  flex-direction: column;
+  height: 76px;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.hifi .tag-line {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.hifi .tag-mobile {
+  width: 165px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+
+.hifi .div-3 {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  aspect-ratio: 1;
+}
+
+.hifi .vector-7 {
+  position: absolute;
+  width: 37.99%;
+  height: 37.97%;
+  top: 58.91%;
+  left: 58.91%;
+}
+
+.hifi .vector-8 {
+  position: absolute;
+  width: 37.99%;
+  height: 37.97%;
+  top: 58.91%;
+  left: 3.11%;
+}
+
+.hifi .vector-9 {
+  position: absolute;
+  width: 68.75%;
+  height: 68.75%;
+  top: 3.12%;
+  left: 15.62%;
+}
+
+.hifi .text-wrapper-25 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  font-family: var(--geomate-fonts-font-body-sm-regular-font-family);
+  font-weight: var(--geomate-fonts-font-body-sm-regular-font-weight);
+  color: var(--gray-900);
+  font-size: var(--geomate-fonts-font-body-sm-regular-font-size);
+  letter-spacing: var(--geomate-fonts-font-body-sm-regular-letter-spacing);
+  line-height: var(--geomate-fonts-font-body-sm-regular-line-height);
+  font-style: var(--geomate-fonts-font-body-sm-regular-font-style);
+}
+
+.hifi .tag-mobile-2 {
+  width: 170.5px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+
+.hifi .layer {
+  position: relative;
+  width: 86.37%;
+  height: 87.50%;
+  top: 6.25%;
+  left: 6.81%;
+}
+
+.hifi .vector-10 {
+  position: absolute;
+  width: 50.65%;
+  height: 50.00%;
+  top: 0;
+  left: 24.67%;
+}
+
+.hifi .vector-11 {
+  position: absolute;
+  width: 13.22%;
+  height: 19.95%;
+  top: 57.14%;
+  left: 43.39%;
+}
+
+.hifi .vector-12 {
+  position: absolute;
+  width: 100%;
+  height: 49.57%;
+  top: 50.43%;
+  left: 0;
+}
+
+.hifi .group-2 {
+  position: relative;
+  width: 64.58%;
+  height: 79.35%;
+  top: 9.37%;
+  left: 18.75%;
+}
+
+.hifi .vector-13 {
+  position: absolute;
+  width: 100%;
+  height: 90.58%;
+  top: 9.42%;
+  left: 0;
+}
+
+.hifi .vector-14 {
+  position: absolute;
+  width: 54.29%;
+  height: 20.93%;
+  top: 0;
+  left: 22.86%;
+}
+
+.hifi .vector-15 {
+  position: absolute;
+  width: 100%;
+  height: 59.18%;
+  top: 20.31%;
+  left: 0;
+}
+
+.hifi .vector-16 {
+  position: absolute;
+  width: 16.14%;
+  height: 14.06%;
+  top: 20.90%;
+  left: 71.29%;
+}
+
+.hifi .vector-17 {
+  position: absolute;
+  width: 35.32%;
+  height: 19.58%;
+  top: 10.13%;
+  left: 24.10%;
+}
+
+.hifi .vector-18 {
+  position: absolute;
+  width: 35.38%;
+  height: 29.24%;
+  top: 26.58%;
+  left: 24.02%;
+}
+
+.hifi .vector-19 {
+  position: absolute;
+  width: 28.35%;
+  height: 5.27%;
+  top: 55.58%;
+  left: 27.35%;
+}
+
+.hifi .vector-20 {
+  position: absolute;
+  width: 27.20%;
+  height: 37.03%;
+  top: 27.61%;
+  left: 64.48%;
+}
+
+.hifi .vector-21 {
+  position: absolute;
+  width: 12.62%;
+  height: 27.55%;
+  top: 62.32%;
+  left: 8.33%;
+}
+
+.hifi .vector-22 {
+  position: absolute;
+  width: 28.53%;
+  height: 7.98%;
+  top: 61.13%;
+  left: 27.65%;
+}
+
+.hifi .vector-23 {
+  position: absolute;
+  width: 12.62%;
+  height: 27.53%;
+  top: 62.33%;
+  left: 62.50%;
+}
+
+.hifi .vector-24 {
+  position: absolute;
+  width: 44.51%;
+  height: 29.53%;
+  top: 60.34%;
+  left: 19.47%;
+}
+
+.hifi .surface {
+  position: relative;
+  width: 85.16%;
+  height: 100.00%;
+  left: 7.42%;
+}
+
+.hifi .vector-25 {
+  position: absolute;
+  width: 44.75%;
+  height: 38.11%;
+  top: 30.95%;
+  left: 27.62%;
+}
+
+.hifi .vector-26 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.hifi .img-wrapper {
+  position: relative;
+  width: 343px;
+  height: 343px;
+  background-color: #d3d3d3;
+  border-radius: 8.16px;
+  overflow: hidden;
+  aspect-ratio: 1;
+}
+
+.hifi .screenshot-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 343px;
+  height: 343px;
+  aspect-ratio: 1.62;
+  object-fit: cover;
+}
+
+.hifi .faq-cta {
+  display: inline-flex;
+  gap: 24px;
+  padding: 40px 16px;
+  background-color: var(--black);
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.hifi .div-4 {
+  display: flex;
+  gap: 16px;
+  align-self: stretch;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.hifi .faq-wrap {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.hifi .faq {
+  display: flex;
+  height: 48px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 0px 14px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  border-bottom-width: 0.63px;
+  border-bottom-style: solid;
+  border-color: var(--gray-700);
+}
+
+.hifi .text-wrapper-26 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 315px;
+  margin-top: -1.63px;
+  margin-bottom: -0.37px;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.hifi .down-arrow {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  aspect-ratio: 1;
+}
+
+.hifi .down-arrow-2 {
+  position: absolute;
+  width: 90.00%;
+  height: 49.09%;
+  top: 23.66%;
+  left: 3.21%;
+}
+
+.hifi .faq-2 {
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 0px 14px;
+  border-bottom-width: 0.63px;
+  border-bottom-style: solid;
+  border-color: var(--gray-700);
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.hifi .text-wrapper-27 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 315px;
+  margin-top: -0.63px;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.hifi .button-base {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 12px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: var(--yellow);
+  border-radius: 48px;
+  overflow: hidden;
+  box-shadow: var(--shadow-shadow-sm);
+}
+
+.hifi .telephone-call-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 8.5px;
+  padding: 6.8px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: var(--black);
+  border-radius: 85px;
+}
+
+.hifi .telephone-call-2 {
+  position: relative;
+  width: 20.4px;
+  height: 20.4px;
+  aspect-ratio: 1;
+}
+
+.hifi .image-11 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 343px;
+  height: 343px;
+  aspect-ratio: 0.75;
+  object-fit: cover;
+}
+
+.hifi .footer {
+  position: relative;
+  width: 375px;
+  height: 143px;
+  background-color: var(--black);
+}
+
+.hifi .frame-5 {
+  display: flex;
+  flex-direction: column;
+  width: 299px;
+  align-items: flex-start;
+  gap: 14px;
+  position: relative;
+  top: 22px;
+  left: 16px;
+}
+
+.hifi .logo-2 {
+  width: 128px;
+  height: 68.71px;
+  background-image: url(./img/screenshot-2025-10-01-at-5-37-38-PM-1.png);
+  background-size: 100% 100%;
+  position: relative;
+  aspect-ratio: 1.86;
+}
+
+.hifi .text-wrapper-28 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--gray-200);
+  font-size: 12px;
+  letter-spacing: 0.06px;
+  line-height: 16px;
+}
+/* INJECT ORIGINAL CSS CODE HERE */
+
+.hifi .button-mobile,
+.hifi .button-base {
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hifi .button-mobile:hover,
+.hifi .button-base:hover {
+  background-color: #f5d05f;
+  transform: translateY(-2px);
+}
+
+.hifi .button-mobile:active,
+.hifi .button-base:active {
+  transform: translateY(0);
+}
+
+.hifi .button-read-more {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.hifi .button-read-more:hover {
+  opacity: 0.7;
+}
+
+.hifi .faq summary,
+.hifi .faq-2 summary {
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+.hifi .faq summary::-webkit-details-marker,
+.hifi .faq-2 summary::-webkit-details-marker {
+  display: none;
+}
+
+.hifi .faq[open] .down-arrow img,
+.hifi .faq-2[open] .down-arrow img {
+  transform: rotate(180deg);
+}
+
+.hifi .down-arrow img {
+  transition: transform 0.3s ease;
+}
+
+.hifi .service-card-mobile {
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.hifi .service-card-mobile:hover {
+  transform: translateY(-4px);
+  border-color: var(--yellow);
+}
+
+.hifi .tag-mobile,
+.hifi .tag-mobile-2 {
+  transition: transform 0.2s ease;
+}
+
+.hifi .tag-mobile:hover,
+.hifi .tag-mobile-2:hover {
+  transform: scale(1.05);
+}
+
+.hifi .background-border,
+.hifi .background-border-2,
+.hifi .background-border-3,
+.hifi .background-border-4,
+.hifi .background-border-5 {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hifi .background-border:hover,
+.hifi .background-border-2:hover,
+.hifi .background-border-3:hover,
+.hifi .background-border-4:hover,
+.hifi .background-border-5:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hifi a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hifi button {
+  border: none;
+  background: none;
+  padding: 0;
+  font: inherit;
+}

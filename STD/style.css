@@ -1,0 +1,1734 @@
+.hifi {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  background-color: var(--black);
+  overflow: hidden;
+}
+
+.hifi .nav {
+  position: relative;
+  width: 1440px;
+  height: 151px;
+  background-color: var(--black);
+}
+
+.hifi .screenshot {
+  position: absolute;
+  top: 32px;
+  left: 87px;
+  width: 195px;
+  height: 104px;
+}
+
+.hifi .hero-main-wrap {
+  position: relative;
+  width: 1440px;
+  height: 767px;
+  background-color: var(--black);
+}
+
+.hifi .ellipse {
+  position: absolute;
+  top: 146px;
+  left: 0;
+  width: 1440px;
+  height: 1545px;
+}
+
+.hifi .hero-content-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 624px;
+  align-items: flex-start;
+  gap: 24px;
+  position: absolute;
+  top: 110px;
+  left: 80px;
+}
+
+.hifi .div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.hifi .other-award {
+  position: relative;
+  height: 74.33px;
+  margin-top: -0.17px;
+}
+
+.hifi .hero-title-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.hifi .text-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 500;
+  color: var(--secondary-color50);
+  font-size: 40px;
+  letter-spacing: -0.6px;
+  line-height: 52px;
+}
+
+.hifi .expert-plumbers-on {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 500;
+  color: transparent;
+  font-size: 72px;
+  letter-spacing: -1.44px;
+  line-height: 88px;
+}
+
+.hifi .span {
+  color: #fad66d;
+  letter-spacing: -1.04px;
+}
+
+.hifi .text-wrapper-2 {
+  color: #ffffff;
+  letter-spacing: -1.04px;
+}
+
+.hifi .award-wrap {
+  display: inline-flex;
+  height: 76px;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.hifi .google-review-img {
+  display: inline-flex;
+  align-items: center;
+  gap: 5.2px;
+  padding: 12.48px;
+  position: relative;
+  flex: 0 0 auto;
+  margin-top: -0.39px;
+  margin-bottom: -0.39px;
+  background-color: var(--transbg);
+  border-radius: 11.61px;
+  border: 1.45px solid;
+  border-color: var(--stroke);
+}
+
+.hifi .google-icon {
+  position: relative;
+  width: 46.42px;
+  height: 46.42px;
+  aspect-ratio: 1;
+}
+
+.hifi .google-rating {
+  display: flex;
+  flex-direction: column;
+  width: 223.41px;
+  align-items: flex-start;
+  gap: 5.8px;
+  position: relative;
+}
+
+.hifi .review {
+  display: flex;
+  width: 223.41px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.hifi .text-wrapper-3 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.04px;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 500;
+  color: var(--gray-200);
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.07px;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+.hifi .text-wrapper-4 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.04px;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #ccd5df;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.07px;
+  line-height: 16px;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
+.hifi .frame {
+  display: flex;
+  align-items: center;
+  gap: 8.32px;
+  align-self: stretch;
+  width: 100%;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.hifi .text-wrapper-5 {
+  margin-top: -0.41px;
+  color: var(--yellow);
+  font-size: 20px;
+  text-align: center;
+  line-height: 29px;
+  position: relative;
+  width: fit-content;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.hifi .img {
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.hifi .button-base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: var(--yellow);
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: var(--shadow-shadow-sm);
+}
+
+.hifi .telephone-call-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: var(--black);
+  border-radius: 100px;
+}
+
+.hifi .telephone-call {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  aspect-ratio: 1;
+}
+
+.hifi .vector {
+  position: absolute;
+  width: 87.5%;
+  height: 87.5%;
+  top: 6.25%;
+  left: 6.25%;
+}
+
+.hifi .vector-2 {
+  position: absolute;
+  width: 25%;
+  height: 25%;
+  top: 21.88%;
+  left: 53.13%;
+}
+
+.hifi .vector-3 {
+  position: absolute;
+  width: 40.62%;
+  height: 40.62%;
+  top: 6.25%;
+  left: 53.13%;
+}
+
+.hifi .text-wrapper-6 {
+  position: relative;
+  width: fit-content;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: var(--black);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.hifi .snake-team {
+  position: absolute;
+  top: 40px;
+  left: 730px;
+  width: 630px;
+  height: 630px;
+  aspect-ratio: 1;
+}
+
+.hifi .leading-magnet {
+  display: flex;
+  width: 1440px;
+  height: 52px;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 12px 10px;
+  position: relative;
+  background-color: var(--yellow);
+  overflow: hidden;
+  box-shadow: 0px 4px 10.1px #f7c43112;
+}
+
+.hifi .leading-magent-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  position: relative;
+  flex: 0 0 auto;
+  margin-left: -81px;
+  margin-right: -10px;
+}
+
+.hifi .element-off-for-your {
+  position: relative;
+  width: 252px;
+  margin-top: -1px;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 500;
+  color: var(--black);
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.hifi .text-wrapper-7 {
+  letter-spacing: -0.02px;
+  line-height: 28px;
+}
+
+.hifi .text-wrapper-8 {
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.hifi .contact-form-section {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 1822px;
+}
+
+.hifi .google-review {
+  position: relative;
+  width: 1440px;
+  height: 554px;
+  background-color: var(--yellow);
+  overflow: hidden;
+}
+
+.hifi .google-review-kit {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  position: absolute;
+  top: 192px;
+  left: calc(50% - 803px);
+}
+
+.hifi .background-border {
+  position: relative;
+  width: 266.72px;
+  height: 265.69px;
+  background-color: #ffffff;
+  border-radius: 13.52px;
+  border-top-width: 2.25px;
+  border-top-style: solid;
+  border-right-width: 2.25px;
+  border-right-style: solid;
+  border-left-width: 2.25px;
+  border-left-style: solid;
+}
+
+.hifi .image {
+  position: absolute;
+  top: -2984px;
+  left: 360px;
+  width: 45px;
+  height: 45px;
+}
+
+.hifi .container {
+  position: absolute;
+  width: calc(100% - 112px);
+  height: calc(100% - 221px);
+  top: 25px;
+  left: 87px;
+  overflow: hidden;
+}
+
+.hifi .div-wrapper {
+  position: absolute;
+  width: 100%;
+  top: calc(50% - 22px);
+  left: 1px;
+  height: 24px;
+  display: flex;
+}
+
+.hifi .text-wrapper-9 {
+  width: 46.05px;
+  height: 23.65px;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  line-height: 23.7px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+  font-size: 16.9px;
+  letter-spacing: 0;
+}
+
+.hifi .text-wrapper-10 {
+  position: absolute;
+  top: 23px;
+  left: 1px;
+  width: 145px;
+  height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #8a8a8a;
+  font-size: 14.6px;
+  letter-spacing: 0;
+  line-height: 20.5px;
+  white-space: nowrap;
+}
+
+.hifi .google {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 23px;
+  height: 23px;
+}
+
+.hifi .google-2 {
+  position: absolute;
+  top: -2927px;
+  left: 360px;
+  width: 19px;
+  height: 19px;
+}
+
+.hifi .google-3 {
+  position: absolute;
+  top: -2927px;
+  left: 380px;
+  width: 19px;
+  height: 19px;
+}
+
+.hifi .google-4 {
+  position: absolute;
+  top: 82px;
+  left: 83px;
+  width: 2px;
+  height: 19px;
+}
+
+.hifi .google-5 {
+  position: absolute;
+  top: 82px;
+  left: 86px;
+  width: 19px;
+  height: 19px;
+}
+
+.hifi .google-6 {
+  position: absolute;
+  top: 82px;
+  left: 106px;
+  width: 19px;
+  height: 19px;
+}
+
+.hifi .image-2 {
+  position: absolute;
+  top: 84px;
+  left: 134px;
+  width: 17px;
+  height: 17px;
+}
+
+.hifi .container-2 {
+  position: absolute;
+  width: calc(100% - 50px);
+  top: 114px;
+  left: 25px;
+  height: 98px;
+  display: flex;
+}
+
+.hifi .i-have-had-a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 208.78px;
+  height: 97.15px;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--black);
+  font-size: 16.9px;
+  letter-spacing: 0;
+  line-height: 24.5px;
+}
+
+.hifi .button-read-more {
+  all: unset;
+  box-sizing: border-box;
+  position: absolute;
+  top: 222px;
+  left: 25px;
+  width: 84px;
+  height: 21px;
+  display: flex;
+  opacity: 0.5;
+}
+
+.hifi .text-wrapper-11 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -1.1px;
+  width: 84.14px;
+  height: 21.4px;
+  margin-left: 0;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--black);
+  font-size: 15.2px;
+  letter-spacing: 0;
+  line-height: 21.3px;
+  white-space: nowrap;
+}
+
+.hifi .image-3 {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 45px;
+  height: 45px;
+}
+
+.hifi .text-wrapper-12 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 78.22px;
+  height: 23.65px;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: var(--black);
+  font-size: 16.9px;
+  letter-spacing: 0;
+  line-height: 23.7px;
+  white-space: nowrap;
+}
+
+.hifi .text-wrapper-13 {
+  position: absolute;
+  top: 23px;
+  left: 1px;
+  width: 136px;
+  height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #8a8a8a;
+  font-size: 14.6px;
+  letter-spacing: 0;
+  line-height: 20.5px;
+  white-space: nowrap;
+}
+
+.hifi .google-7 {
+  position: absolute;
+  top: 82px;
+  left: 25px;
+  width: 19px;
+  height: 19px;
+}
+
+.hifi .google-8 {
+  position: absolute;
+  top: 82px;
+  left: 45px;
+  width: 19px;
+  height: 19px;
+}
+
+.hifi .google-9 {
+  position: absolute;
+  top: 82px;
+  left: 65px;
+  width: 19px;
+  height: 19px;
+}
+
+.hifi .container-3 {
+  position: absolute;
+  width: calc(100% - 50px);
+  top: 114px;
+  left: 25px;
+  height: 98px;
+  display: flex;
+  gap: 27.7px;
+}
+
+.hifi .well-if-you-want-the {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 99.39px;
+  height: 97.15px;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--black);
+  font-size: 16.9px;
+  letter-spacing: 0;
+  line-height: 24.5px;
+}
+
+.hifi .background {
+  margin-top: 2.3px;
+  width: 90.11px;
+  height: 90.11px;
+  display: flex;
+  border-radius: 13.52px;
+  overflow: hidden;
+  background-image: url(./img/background.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.hifi .div-2 {
+  flex: 1;
+  width: 90.11px;
+  border-radius: 13.52px;
+  background-image: url(./img/ab3l90ca8ljhjnlize8jei5vn-pkfzpaactpd6pyd8l7thsnbu3zs-n9x6kum6emdu1bp7jstqhrlj0fhokr0s98xgf5o2udinzvm81n4zseioitd9d4dnspgacjbznizdmmefnzzwi1nogehgi.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.hifi .text-wrapper-14 {
+  width: 58px;
+  height: 23.65px;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  line-height: 23.7px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+  font-size: 16.9px;
+  letter-spacing: 0;
+}
+
+.hifi .text-wrapper-15 {
+  position: absolute;
+  top: 23px;
+  left: 1px;
+  width: 115px;
+  height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #8a8a8a;
+  font-size: 14.6px;
+  letter-spacing: 0;
+  line-height: 20.5px;
+  white-space: nowrap;
+}
+
+.hifi .very-professional {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 206.59px;
+  height: 48.15px;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--black);
+  font-size: 16.9px;
+  letter-spacing: 0;
+  line-height: 24.5px;
+}
+
+.hifi .text-wrapper-16 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 69.85px;
+  height: 23.65px;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: var(--black);
+  font-size: 16.9px;
+  letter-spacing: 0;
+  line-height: 23.7px;
+  white-space: nowrap;
+}
+
+.hifi .steve-did-a-great {
+  width: 203.96px;
+  height: 97.15px;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  line-height: 24.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+  font-size: 16.9px;
+  letter-spacing: 0;
+}
+
+.hifi .text-wrapper-17 {
+  width: 63.3px;
+  height: 23.65px;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  line-height: 23.7px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+  font-size: 16.9px;
+  letter-spacing: 0;
+}
+
+.hifi .just-had-the-best {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 210.79px;
+  height: 97.15px;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--black);
+  font-size: 16.9px;
+  letter-spacing: 0;
+  line-height: 24.5px;
+}
+
+.hifi .google-10 {
+  position: absolute;
+  top: -2984px;
+  right: 1113px;
+  width: 23px;
+  height: 23px;
+}
+
+.hifi .google-11 {
+  position: absolute;
+  top: 82px;
+  left: 86px;
+  width: 14px;
+  height: 19px;
+}
+
+.hifi .google-12 {
+  position: absolute;
+  top: -2927px;
+  left: -983px;
+  width: 19px;
+  height: 19px;
+}
+
+.hifi .image-4 {
+  position: absolute;
+  top: -2925px;
+  left: -955px;
+  width: 17px;
+  height: 17px;
+}
+
+.hifi .p {
+  position: absolute;
+  top: 96px;
+  left: calc(50% - 638px);
+  width: 1039px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--geomate-fonts-font-heading-3-medium-font-family);
+  font-weight: var(--geomate-fonts-font-heading-3-medium-font-weight);
+  color: var(--black);
+  font-size: var(--geomate-fonts-font-heading-3-medium-font-size);
+  letter-spacing: var(--geomate-fonts-font-heading-3-medium-letter-spacing);
+  line-height: var(--geomate-fonts-font-heading-3-medium-line-height);
+  font-style: var(--geomate-fonts-font-heading-3-medium-font-style);
+}
+
+.hifi .services-section {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 40px;
+  padding: 97px 80px;
+  position: relative;
+  flex: 0 0 auto;
+  margin-right: -1px;
+  background-color: var(--black);
+}
+
+.hifi .div-3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.hifi .our-plumbing-company {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--geomate-fonts-font-heading-3-medium-font-family);
+  font-weight: var(--geomate-fonts-font-heading-3-medium-font-weight);
+  color: transparent;
+  font-size: var(--geomate-fonts-font-heading-3-medium-font-size);
+  text-align: center;
+  letter-spacing: var(--geomate-fonts-font-heading-3-medium-letter-spacing);
+  line-height: var(--geomate-fonts-font-heading-3-medium-line-height);
+  white-space: nowrap;
+  font-style: var(--geomate-fonts-font-heading-3-medium-font-style);
+}
+
+.hifi .text-wrapper-18 {
+  color: #ffffff;
+  letter-spacing: var(--geomate-fonts-font-heading-3-medium-letter-spacing);
+  font-family: var(--geomate-fonts-font-heading-3-medium-font-family);
+  font-style: var(--geomate-fonts-font-heading-3-medium-font-style);
+  font-weight: var(--geomate-fonts-font-heading-3-medium-font-weight);
+  line-height: var(--geomate-fonts-font-heading-3-medium-line-height);
+  font-size: var(--geomate-fonts-font-heading-3-medium-font-size);
+}
+
+.hifi .text-wrapper-19 {
+  color: #fad66d;
+  letter-spacing: var(--geomate-fonts-font-heading-3-medium-letter-spacing);
+  font-family: var(--geomate-fonts-font-heading-3-medium-font-family);
+  font-style: var(--geomate-fonts-font-heading-3-medium-font-style);
+  font-weight: var(--geomate-fonts-font-heading-3-medium-font-weight);
+  line-height: var(--geomate-fonts-font-heading-3-medium-line-height);
+  font-size: var(--geomate-fonts-font-heading-3-medium-font-size);
+}
+
+.hifi .text-wrapper-20 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  margin-top: -1px;
+  font-family: var(--geomate-fonts-font-body-xlg-regular-font-family);
+  font-weight: var(--geomate-fonts-font-body-xlg-regular-font-weight);
+  color: #ffffff;
+  font-size: var(--geomate-fonts-font-body-xlg-regular-font-size);
+  letter-spacing: var(--geomate-fonts-font-body-xlg-regular-letter-spacing);
+  line-height: var(--geomate-fonts-font-body-xlg-regular-line-height);
+  font-style: var(--geomate-fonts-font-body-xlg-regular-font-style);
+}
+
+.hifi .service-cards {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.hifi .service-wrap {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.hifi .service-card {
+  margin-left: -1px;
+  display: flex;
+  flex-direction: column;
+  width: 413px;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 42px;
+  padding: 24px;
+  position: relative;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  background-color: var(--black);
+  border-radius: 16px;
+  border: 1px solid;
+  border-color: var(--gray-800);
+}
+
+.hifi .img-2 {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  aspect-ratio: 1;
+}
+
+.hifi .text-wrapper-21 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  font-family: var(--geomate-fonts-font-heading-5-medium-font-family);
+  font-weight: var(--geomate-fonts-font-heading-5-medium-font-weight);
+  color: var(--gray-50);
+  font-size: var(--geomate-fonts-font-heading-5-medium-font-size);
+  letter-spacing: var(--geomate-fonts-font-heading-5-medium-letter-spacing);
+  line-height: var(--geomate-fonts-font-heading-5-medium-line-height);
+  white-space: nowrap;
+  font-style: var(--geomate-fonts-font-heading-5-medium-font-style);
+}
+
+.hifi .service-card-2 {
+  display: flex;
+  flex-direction: column;
+  width: 413px;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 42px;
+  padding: 24px;
+  position: relative;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  background-color: var(--black);
+  border-radius: 16px;
+  border: 1px solid;
+  border-color: var(--gray-800);
+}
+
+.hifi .simulation {
+  background-color: #ffffff40;
+  border-radius: 1166.67px;
+  overflow: hidden;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  aspect-ratio: 1;
+}
+
+.hifi .toilet {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 25%;
+  left: 25%;
+}
+
+.hifi .service-card-3 {
+  margin-right: -1px;
+  display: flex;
+  flex-direction: column;
+  width: 413px;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 42px;
+  padding: 24px;
+  position: relative;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  background-color: var(--black);
+  border-radius: 16px;
+  border: 1px solid;
+  border-color: var(--gray-800);
+}
+
+.hifi .text-wrapper-22 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  font-family: var(--geomate-fonts-font-heading-5-medium-font-family);
+  font-weight: var(--geomate-fonts-font-heading-5-medium-font-weight);
+  color: var(--gray-50);
+  font-size: var(--geomate-fonts-font-heading-5-medium-font-size);
+  letter-spacing: var(--geomate-fonts-font-heading-5-medium-letter-spacing);
+  line-height: var(--geomate-fonts-font-heading-5-medium-line-height);
+  font-style: var(--geomate-fonts-font-heading-5-medium-font-style);
+}
+
+.hifi .hot-water {
+  position: relative;
+  top: 18px;
+  left: 18px;
+  width: 35px;
+  height: 35px;
+}
+
+.hifi .vector-4 {
+  position: absolute;
+  width: 78.98%;
+  height: 63.22%;
+  top: 20.9%;
+  left: 13.62%;
+}
+
+.hifi .vector-5 {
+  position: absolute;
+  width: 84.93%;
+  height: 33.73%;
+  top: 62.83%;
+  left: 7.4%;
+}
+
+.hifi .vector-6 {
+  position: absolute;
+  width: 52.1%;
+  height: 31.38%;
+  top: 3.45%;
+  left: 13.62%;
+}
+
+.hifi .why-section {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 40px;
+  padding: 97px 80px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: #ffffff;
+}
+
+.hifi .text-wrapper-23 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: var(--geomate-fonts-font-heading-3-medium-font-family);
+  font-weight: var(--geomate-fonts-font-heading-3-medium-font-weight);
+  color: var(--black);
+  font-size: var(--geomate-fonts-font-heading-3-medium-font-size);
+  letter-spacing: var(--geomate-fonts-font-heading-3-medium-letter-spacing);
+  line-height: var(--geomate-fonts-font-heading-3-medium-line-height);
+  font-style: var(--geomate-fonts-font-heading-3-medium-font-style);
+}
+
+.hifi .content {
+  display: flex;
+  align-items: center;
+  gap: 83px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.hifi .screenshot-wrapper {
+  position: relative;
+  width: 650px;
+  height: 650px;
+  background-color: #d3d3d3;
+  border-radius: 15.46px;
+  overflow: hidden;
+  aspect-ratio: 1;
+}
+
+.hifi .screenshot-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 650px;
+  height: 650px;
+  aspect-ratio: 1.62;
+  object-fit: cover;
+}
+
+.hifi .content-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 544px;
+  align-items: flex-start;
+  gap: 24px;
+  position: relative;
+}
+
+.hifi .sub-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 18px;
+  padding: 0px 0px 24px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: var(--gray-300);
+}
+
+.hifi .text-wrapper-24 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 544px;
+  margin-top: -1px;
+  font-family: var(--geomate-fonts-font-heading-5-medium-font-family);
+  font-weight: var(--geomate-fonts-font-heading-5-medium-font-weight);
+  color: var(--black);
+  font-size: var(--geomate-fonts-font-heading-5-medium-font-size);
+  letter-spacing: var(--geomate-fonts-font-heading-5-medium-letter-spacing);
+  line-height: var(--geomate-fonts-font-heading-5-medium-line-height);
+  font-style: var(--geomate-fonts-font-heading-5-medium-font-style);
+}
+
+.hifi .points {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.hifi .point-wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.hifi .point-tag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.hifi .div-4 {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  aspect-ratio: 1;
+}
+
+.hifi .vector-7 {
+  position: absolute;
+  width: 37.99%;
+  height: 37.97%;
+  top: 58.91%;
+  left: 58.91%;
+}
+
+.hifi .vector-8 {
+  position: absolute;
+  width: 37.99%;
+  height: 37.97%;
+  top: 58.91%;
+  left: 3.11%;
+}
+
+.hifi .vector-9 {
+  position: absolute;
+  width: 68.75%;
+  height: 68.75%;
+  top: 3.12%;
+  left: 15.62%;
+}
+
+.hifi .text-wrapper-25 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  font-family: var(--geomate-fonts-font-body-lg-regular-font-family);
+  font-weight: var(--geomate-fonts-font-body-lg-regular-font-weight);
+  color: var(--black);
+  font-size: var(--geomate-fonts-font-body-lg-regular-font-size);
+  letter-spacing: var(--geomate-fonts-font-body-lg-regular-letter-spacing);
+  line-height: var(--geomate-fonts-font-body-lg-regular-line-height);
+  font-style: var(--geomate-fonts-font-body-lg-regular-font-style);
+}
+
+.hifi .layer {
+  position: relative;
+  width: 86.37%;
+  height: 87.5%;
+  top: 6.25%;
+  left: 6.81%;
+}
+
+.hifi .vector-10 {
+  position: absolute;
+  width: 50.65%;
+  height: 50%;
+  top: 0;
+  left: 24.67%;
+}
+
+.hifi .vector-11 {
+  position: absolute;
+  width: 13.22%;
+  height: 19.95%;
+  top: 57.14%;
+  left: 43.39%;
+}
+
+.hifi .vector-12 {
+  position: absolute;
+  width: 100%;
+  height: 49.57%;
+  top: 50.43%;
+  left: 0;
+}
+
+.hifi .group {
+  position: relative;
+  width: 64.58%;
+  height: 79.35%;
+  top: 9.37%;
+  left: 18.75%;
+}
+
+.hifi .vector-13 {
+  position: absolute;
+  width: 100%;
+  height: 90.58%;
+  top: 9.42%;
+  left: 0;
+}
+
+.hifi .vector-14 {
+  position: absolute;
+  width: 54.29%;
+  height: 20.93%;
+  top: 0;
+  left: 22.86%;
+}
+
+.hifi .vector-15 {
+  position: absolute;
+  width: 100%;
+  height: 59.18%;
+  top: 20.31%;
+  left: 0;
+}
+
+.hifi .vector-16 {
+  position: absolute;
+  width: 16.14%;
+  height: 14.06%;
+  top: 20.9%;
+  left: 71.29%;
+}
+
+.hifi .vector-17 {
+  position: absolute;
+  width: 35.32%;
+  height: 19.58%;
+  top: 10.13%;
+  left: 24.1%;
+}
+
+.hifi .vector-18 {
+  position: absolute;
+  width: 35.38%;
+  height: 29.24%;
+  top: 26.58%;
+  left: 24.02%;
+}
+
+.hifi .vector-19 {
+  position: absolute;
+  width: 28.35%;
+  height: 5.27%;
+  top: 55.58%;
+  left: 27.35%;
+}
+
+.hifi .vector-20 {
+  position: absolute;
+  width: 27.2%;
+  height: 37.03%;
+  top: 27.61%;
+  left: 64.48%;
+}
+
+.hifi .vector-21 {
+  position: absolute;
+  width: 12.62%;
+  height: 27.55%;
+  top: 62.32%;
+  left: 8.33%;
+}
+
+.hifi .vector-22 {
+  position: absolute;
+  width: 28.53%;
+  height: 7.98%;
+  top: 61.13%;
+  left: 27.65%;
+}
+
+.hifi .vector-23 {
+  position: absolute;
+  width: 12.62%;
+  height: 27.53%;
+  top: 62.33%;
+  left: 62.5%;
+}
+
+.hifi .vector-24 {
+  position: absolute;
+  width: 44.51%;
+  height: 29.53%;
+  top: 60.34%;
+  left: 19.47%;
+}
+
+.hifi .shield {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.hifi .surface {
+  position: relative;
+  width: 85.16%;
+  height: 100%;
+  left: 7.42%;
+}
+
+.hifi .vector-25 {
+  position: absolute;
+  width: 44.75%;
+  height: 38.11%;
+  top: 30.95%;
+  left: 27.62%;
+}
+
+.hifi .vector-26 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.hifi .button {
+  all: unset;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 24px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: var(--yellow);
+  border-radius: 48px;
+  overflow: hidden;
+  box-shadow: var(--shadow-shadow-sm);
+}
+
+.hifi .faq-cta {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 40px;
+  padding: 97px 80px 40px;
+  background-color: var(--black);
+  flex-direction: column;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.hifi .faq-cta-2 {
+  display: flex;
+  width: 1280px;
+  align-items: flex-start;
+  gap: 70px;
+  flex-direction: column;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.hifi .div-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.hifi .answers-to-common {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: var(--geomate-fonts-font-heading-3-medium-font-family);
+  font-weight: var(--geomate-fonts-font-heading-3-medium-font-weight);
+  color: transparent;
+  font-size: var(--geomate-fonts-font-heading-3-medium-font-size);
+  letter-spacing: var(--geomate-fonts-font-heading-3-medium-letter-spacing);
+  line-height: var(--geomate-fonts-font-heading-3-medium-line-height);
+  font-style: var(--geomate-fonts-font-heading-3-medium-font-style);
+}
+
+.hifi .faq-dropdown {
+  display: flex;
+  width: 586px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 0px 32px;
+  position: relative;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: var(--gray-700);
+}
+
+.hifi .text-wrapper-26 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 542px;
+  margin-top: -1px;
+  font-family: var(--geomate-fonts-font-body-lg-medium-font-family);
+  font-weight: var(--geomate-fonts-font-body-lg-medium-font-weight);
+  color: #ffffff;
+  font-size: var(--geomate-fonts-font-body-lg-medium-font-size);
+  letter-spacing: var(--geomate-fonts-font-body-lg-medium-letter-spacing);
+  line-height: var(--geomate-fonts-font-body-lg-medium-line-height);
+  font-style: var(--geomate-fonts-font-body-lg-medium-font-style);
+}
+
+.hifi .down-arrow {
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+
+.hifi .down-arrow-2 {
+  position: absolute;
+  width: 90%;
+  height: 49.09%;
+  top: 22.96%;
+  left: 2.5%;
+}
+
+.hifi .CTA {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 593px;
+}
+
+.hifi .background-2 {
+  position: relative;
+  top: -2px;
+  left: -2px;
+  width: 1284px;
+  height: 597px;
+  background-color: var(--black);
+  border-radius: 40px;
+  overflow: hidden;
+  border: 2px solid;
+  border-color: var(--gray-800);
+}
+
+.hifi .image-5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 744px;
+  height: 593px;
+  aspect-ratio: 0.75;
+  object-fit: cover;
+}
+
+.hifi .rectangle {
+  position: absolute;
+  top: -63px;
+  left: 549px;
+  width: 982px;
+  height: 795px;
+  filter: blur(61.05px);
+  backdrop-filter: blur(27.3px) brightness(100%);
+  -webkit-backdrop-filter: blur(27.3px) brightness(100%);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.42) 100%
+  );
+}
+
+.hifi .ellipse-2 {
+  position: absolute;
+  top: 0;
+  left: 244px;
+  width: 1036px;
+  height: 593px;
+}
+
+.hifi .cta-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 544px;
+  align-items: flex-start;
+  gap: 25px;
+  position: absolute;
+  top: calc(50% - 126px);
+  left: 664px;
+}
+
+.hifi .text-wrapper-27 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.hifi .get-started-with-us {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 500;
+  color: transparent;
+  font-size: 40px;
+  letter-spacing: -0.4px;
+  line-height: 56px;
+}
+
+.hifi .text-wrapper-28 {
+  color: #fad66d;
+  letter-spacing: -0.16px;
+}
+
+.hifi .text-wrapper-29 {
+  color: #ffffff;
+  letter-spacing: -0.16px;
+}
+
+.hifi .text-wrapper-30 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  font-family: var(--geomate-fonts-font-body-xlg-regular-font-family);
+  font-weight: var(--geomate-fonts-font-body-xlg-regular-font-weight);
+  color: #ffffff;
+  font-size: var(--geomate-fonts-font-body-xlg-regular-font-size);
+  letter-spacing: var(--geomate-fonts-font-body-xlg-regular-letter-spacing);
+  line-height: var(--geomate-fonts-font-body-xlg-regular-line-height);
+  font-style: var(--geomate-fonts-font-body-xlg-regular-font-style);
+}
+
+.hifi .button-base-2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 24px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: var(--yellow);
+  border-radius: 48px;
+  overflow: hidden;
+  box-shadow: var(--shadow-shadow-sm);
+}
+
+.hifi .footer {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 136px;
+  background-color: var(--black);
+}
+
+.hifi .company-info {
+  display: flex;
+  width: 1280px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: calc(50% - 35px);
+  left: 83px;
+}
+
+.hifi .screenshot-3 {
+  position: relative;
+  width: 130px;
+  height: 70px;
+}
+
+.hifi .text-wrapper-31 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 299px;
+  font-family: var(--geomate-fonts-font-body-md-regular-font-family);
+  font-weight: var(--geomate-fonts-font-body-md-regular-font-weight);
+  color: var(--gray-200);
+  font-size: var(--geomate-fonts-font-body-md-regular-font-size);
+  letter-spacing: var(--geomate-fonts-font-body-md-regular-letter-spacing);
+  line-height: var(--geomate-fonts-font-body-md-regular-line-height);
+  font-style: var(--geomate-fonts-font-body-md-regular-font-style);
+}
+/* INJECT ORIGINAL CSS HERE */
+
+.hifi .contact-form-section-wrapper {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.hifi .button-base,
+.hifi .button,
+.hifi .button-base-2 {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hifi .button-base:hover,
+.hifi .button:hover,
+.hifi .button-base-2:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 12px rgba(250, 215, 110, 0.4);
+}
+
+.hifi .button-base:active,
+.hifi .button:active,
+.hifi .button-base-2:active {
+  transform: translateY(0);
+}
+
+.hifi .button-read-more {
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.hifi .button-read-more:hover {
+  opacity: 0.7 !important;
+}
+
+.hifi .faq-dropdown {
+  cursor: pointer;
+}
+
+.hifi .faq-dropdown summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.hifi .faq-dropdown summary::-webkit-details-marker {
+  display: none;
+}
+
+.hifi .faq-dropdown[open] .down-arrow {
+  transform: rotate(180deg);
+}
+
+.hifi .down-arrow {
+  transition: transform 0.3s ease;
+}
+
+.hifi .points {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hifi .point-wrap {
+  list-style: none;
+}
