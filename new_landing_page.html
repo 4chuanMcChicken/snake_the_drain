@@ -20,6 +20,9 @@
         color: white;
       }
       @media (max-width: 768px) {
+        .why-points {
+          grid-template-columns: 1fr !important;
+        }
         .services {
           padding: 40px 0 !important;
         }
@@ -385,9 +388,21 @@
 
       /* ===== Marquee（优惠横幅）===== */
       .marquee {
-        background: var(--yellow);
+        background: #fdb022;
         color: var(--black);
         width: 100%;
+      }
+      @media (max-width: 768px) {
+        .marquee {
+          display: none !important;
+        }
+      }
+
+      .marquee-mobile {
+        background: #fdb022;
+        color: var(--black);
+        width: 100%;
+        display: none;
       }
       .marquee-inner {
         display: flex;
@@ -569,6 +584,12 @@
         min-height: 160px;
       }
       @media (max-width: 768px) {
+        .marquee-mobile .marquee-track {
+          animation-duration: 2s !important;
+        }
+        .marquee-mobile {
+          display: block !important;
+        }
         .reviews {
           padding: 40px 0;
         }
@@ -665,6 +686,10 @@
           font-size: var(--h2) !important;
           line-height: var(--h2-line) !important;
           font-weight: 600 !important;
+        }
+        .why-media {
+          margin-top: 10px !important;
+          min-height: 350px !important;
         }
       }
       .why-media img {
@@ -792,7 +817,7 @@
       .cta-content {
         display: flex;
         flex-direction: column;
-        gap: 18px;
+        gap: 40px;
         justify-content: center;
         padding: 40px;
         background: url("./images/bg.png") center center/cover no-repeat;
@@ -898,6 +923,15 @@
         .cta-content {
           background: none !important;
           padding: 40px 20px;
+          gap: 20px !important;
+        }
+        .cta-title {
+          font-size: var(--h3) !important;
+          line-height: var(--h3-line) !important;
+        }
+        .cta-text {
+          font-size: var(--body) !important;
+          line-height: var(--body-line) !important;
         }
       }
     </style>
@@ -984,9 +1018,13 @@
 
             <div class="hero-col">
               <!-- 手机版显示的优惠横幅 -->
-              <div class="marquee-mobile" style="display: none">
+              <section class="section marquee-mobile container">
                 <div class="marquee-inner">
-                  <div class="marquee-track" aria-hidden="true">
+                  <div
+                    class="marquee-track"
+                    aria-hidden="true"
+                    style="max-width: 90vw !important"
+                  >
                     <div class="marquee-item">
                       $50 off for your first service
                     </div>
@@ -1013,7 +1051,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </section>
               <div
                 class="hero-image"
                 role="img"
@@ -1040,7 +1078,6 @@
               <div class="marquee-item">$50 off for your first service</div>
               <div class="marquee-item">$50 off for your first service</div>
               <div class="marquee-item">$50 off for your first service</div>
-              <!-- 复制两遍确保无缝滚动 -->
               <div class="marquee-item">$50 off for your first service</div>
               <div class="marquee-item">$50 off for your first service</div>
               <div class="marquee-item">$50 off for your first service</div>
