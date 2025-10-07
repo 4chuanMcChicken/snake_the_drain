@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Expert plumbers on Long Island offering same day quotes and service. 24/7 emergency plumbing services available."
+  />
+  <title>Snake The Drain - Expert Plumbers On Long Island</title>
+
+  <!-- 全部样式整合在此：reset + variables + base + components -->
+  <style>
+    /* ===== Meyer Reset (subset) ===== */
+    @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+    /* ===== Variables ===== */
+    :root {
+      --yellow: rgba(250, 215, 110, 1);
+      --transbg: rgba(29, 29, 29, 1);
+      --stroke: rgba(52, 52, 52, 1);
+      --black: rgba(0, 0, 0, 1);
+      --secondary-color50: rgba(247, 253, 255, 1);
+      --gray-50: rgba(255, 255, 255, 1);
+      --gray-200: rgba(238, 242, 246, 1);
+      --gray-300: rgba(204, 213, 223, 1);
+      --gray-700: rgba(54, 65, 81, 1);
+      --gray-800: rgba(30, 40, 45, 1);
+
+      --container: 1200px;
+
+      /* 字体层次（保留你原来的等级风格） */
+      --h1: 72px;
+      --h1-line: 88px;
+      --h2: 40px;
+      --h2-line: 56px;
+      --h3: 28px;
+      --h3-line: 38px;
+      --body-lg: 18px;
+      --body-lg-line: 28px;
+      --body: 16px;
+      --body-line: 24px;
+    }
+
+    /* ===== Base ===== */
+    * { -webkit-font-smoothing: antialiased; box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: var(--black);
+      color: var(--gray-50);
+      margin: 0;
+    }
+    a { text-decoration: none; color: inherit; }
+    button:focus-visible {
+      outline: 2px solid #4a90e2 !important;
+      outline-offset: 2px;
+    }
+
+    /* ===== Layout Helpers ===== */
+    .page { display: flex; flex-direction: column; min-height: 100dvh; width: 100%; }
+    .section {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      width: 100%;
+      max-width: var(--container);
+      padding: 0 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    /* ===== Header ===== */
+    header.nav {
+      width: 100%;
+      background: var(--black);
+      border-bottom: 1px solid var(--gray-800);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 20px 24px;
+      max-width: var(--container);
+      margin: 0 auto;
+      width: 100%;
+    }
+    .brand {
+      display: flex; align-items: center; gap: 12px;
+    }
+    .brand img { height: 86px; width: auto; }
+    .nav-actions { display: flex; align-items: center; gap: 12px; }
+
+    /* ===== Buttons ===== */
+    .btn, .btn-pill {
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+      padding: 16px 24px; border-radius: 48px;
+      background: #1D1D1D; color: var(--black);
+      font-weight: 600; font-size: 16px; line-height: 24px;
+      cursor: pointer; box-shadow: 0 2px 6px ;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .btn:hover, .btn-pill:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(250,215,110,.4); }
+    .btn:active, .btn-pill:active { transform: translateY(0); }
+
+    .btn-icon {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 8px 10px; border-radius: 999px;  color: var(--gray-50);
+    }
+    .btn.call-now-yellow {
+      background: var(--yellow);
+      color: var(--black);
+    }
+
+    /* ===== Hero ===== */
+    .hero {
+      background: var(--black);
+      padding: 72px 0;
+      width: 100%;
+    }
+    .hero .container { gap: 36px; }
+    .hero-row {
+      display: flex; gap: 48px; align-items: center; width: 100%;
+    }
+    .hero-col {
+      flex: 1 1 0; display: flex; flex-direction: column; gap: 20px;
+    }
+    .badge-row { display: flex; flex-wrap: wrap; gap: 12px; }
+    .google-badge {
+      display: flex; gap: 12px; align-items: center;
+      padding: 12px; border-radius: 12px; border: 1px solid var(--stroke);
+      background: var(--transbg);
+    }
+    .google-badge img.google-icon { width: 46px; height: 46px; }
+    .rating-col { display: flex; flex-direction: column; gap: 6px; }
+    .rating-top { display: flex; gap: 12px; align-items: center; }
+    .rating-top .label { color: #ccd5df; font-size: 14px; }
+    .rating-bottom { display: flex; gap: 8px; align-items: center; }
+    .rating-score { color: var(--yellow); font-weight: 600; }
+
+    .eyebrow {
+      color: var(--secondary-color50);
+      font-size: 40px; line-height: 52px; font-weight: 500;
+      text-align: left;
+    }
+    .hero-title {
+      font-size: var(--h1); line-height: var(--h1-line); font-weight: 600;
+      color: var(--gray-50);
+    }
+    .hero-title .accent { color: #fad66d; }
+    .hero-cta-row { display: flex; align-items: center; gap: 16px; }
+
+    .hero-image {
+      width: 100%;
+      border-radius: 20px;
+      background: #111;
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden;
+      aspect-ratio: 1/1; /* 无固定高度 */
+    }
+    .hero-image img { width: 100%; height: 100%; object-fit: cover; }
+
+    /* ===== Marquee（优惠横幅）===== */
+    .marquee {
+      background: var(--yellow); color: var(--black);
+      width: 100%;
+    }
+    .marquee-inner {
+      display: flex; gap: 24px; align-items: center;
+      padding: 12px 0;
+      overflow: hidden;
+    }
+    .marquee-track {
+      display: flex; gap: 24px; white-space: nowrap;
+      animation: scroll 18s linear infinite;
+    }
+    .marquee-item { font-weight: 500; font-size: 20px; }
+    @keyframes scroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    /* ===== Contact (占位图) ===== */
+    .contact {
+      background: var(--black);
+      padding: 48px 0;
+    }
+    .contact-card {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      border-radius: 16px;
+      border: 1px solid var(--gray-800);
+      overflow: hidden;
+      background: #0c0c0c;
+      padding: 0;
+    }
+    .contact-card img { width: 100%; height: auto; display: block; }
+
+    /* ===== Reviews ===== */
+    .reviews {
+      background: var(--yellow); color: var(--black);
+      padding: 64px 0;
+    }
+    .reviews .container { gap: 28px; }
+    .reviews h2 {
+      text-align: center; margin: 0 auto;
+      font-size: var(--h2); line-height: var(--h2-line);
+      color: var(--black);
+    }
+    .review-grid {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 18px;
+    }
+    .review-card {
+      background: #fff; color: var(--black);
+      border-radius: 14px;
+      border: 2px solid #eee;
+      display: flex; flex-direction: column; gap: 12px;
+      padding: 20px;
+    }
+    .review-head {
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    }
+    .profile { display: flex; align-items: center; gap: 12px; }
+    .avatar { width: 45px; height: 45px; border-radius: 50%; object-fit: cover; }
+    .name { font-weight: 600; }
+    .date { color: #8a8a8a; font-size: 14px; }
+    .stars { display: flex; gap: 4px; align-items: center; }
+    .review-body { font-size: 16px; line-height: 24px; }
+    .review-actions { display: flex; }
+    .readmore {
+      font-size: 15px; opacity: .7; cursor: pointer;
+      background: transparent; border: none; padding: 6px 0;
+      color: var(--black);
+    }
+
+    /* 让 6 卡片在桌面一行展示（和你原始 6 个卡片对应） */
+    .review-grid > * { min-width: 0; }
+
+    /* ===== Services ===== */
+    .services {
+      background: var(--black);
+      padding: 96px 0;
+    }
+    .services-head {
+      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;
+    }
+    .services-title {
+      font-size: var(--h2); line-height: var(--h2-line); font-weight: 600;
+    }
+    .services-title .accent { color: #fad66d; }
+    .services-sub { font-size: var(--body-lg); line-height: var(--body-lg-line); color: #fff; max-width: 480px; }
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      width: 100%;
+    }
+    .service-card {
+      border: 1px solid var(--gray-800);
+      border-radius: 16px;
+      background: #0b0b0b;
+      display: flex; flex-direction: column; gap: 24px;
+      padding: 24px;
+      min-height: 160px;
+    }
+    .service-icon {
+      width: 70px; height: 70px; border-radius: 999px;
+      background: #ffffff40; display: flex; align-items: center; justify-content: center;
+      overflow: hidden;
+    }
+    .service-icon img { width: 50%; height: 50%; object-fit: contain; }
+    .service-name {
+      font-size: 28px; line-height: 36px; color: var(--gray-50);
+      font-weight: 600;
+    }
+
+    /* ===== Why Choose Us ===== */
+    .why {
+      background: #fff; color: var(--black);
+      padding: 96px 0;
+    }
+    .why h2 {
+      text-align: center; font-size: var(--h2); line-height: var(--h2-line); margin-bottom: 16px;
+    }
+    .why-row {
+      display: flex; gap: 48px; width: 100%; align-items: stretch;
+    }
+    .why-media, .why-content { flex: 1 1 0; display: flex; }
+    .why-media {
+      border-radius: 16px; overflow: hidden; background: #d3d3d3;
+    }
+    .why-media img { width: 100%; height: auto; object-fit: cover; }
+    .why-content { flex-direction: column; gap: 24px; }
+    .why-sub {
+      padding-bottom: 20px; border-bottom: 1px solid var(--gray-300);
+      font-size: 28px; line-height: 36px;
+    }
+    .why-points {
+      display: grid; gap: 18px; grid-template-columns: 1fr 1fr;
+    }
+    .why-point {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 18px; line-height: 28px;
+    }
+    .why-point .dot {
+      width: 28px; height: 28px; border-radius: 50%; background: var(--black);
+      display: inline-block;
+    }
+
+    /* ===== FAQ + CTA ===== */
+    .faq-cta {
+      background: var(--black); color: #fff; padding: 96px 0 48px;
+    }
+    .faq-wrap { display: flex; flex-direction: column; gap: 40px; }
+    .faq-title {
+      text-align: center; font-size: var(--h2); line-height: var(--h2-line);
+    }
+    .faq-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+    }
+    .faq-col { display: flex; flex-direction: column; gap: 24px; }
+    details.faq {
+      border-bottom: 1px solid var(--gray-700);
+      padding-bottom: 16px;
+    }
+    details.faq summary {
+      cursor: pointer; list-style: none;
+      display: flex; justify-content: space-between; align-items: center; gap: 12px;
+      font-size: 18px; line-height: 28px; font-weight: 500;
+    }
+    details.faq[open] summary .arrow { transform: rotate(180deg); }
+    .arrow { transition: transform .25s ease; }
+    details.faq p { margin-top: 12px; color: #e5e7eb; }
+
+    .cta-card {
+      margin-top: 40px;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+      width: 100%;
+      border: 2px solid var(--gray-800); border-radius: 24px; overflow: hidden;
+      background: #0b0b0b;
+    }
+    .cta-media { width: 100%; }
+    .cta-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .cta-content {
+      display: flex; flex-direction: column; gap: 18px; justify-content: center;
+      padding: 40px;
+    }
+    .cta-eyebrow { font-weight: 600; }
+    .cta-title { font-size: 40px; line-height: 56px; font-weight: 600; }
+    .cta-title .accent { color: #fad66d; }
+    .cta-text { font-size: var(--body-lg); line-height: var(--body-lg-line); }
+
+    /* ===== Footer ===== */
+    footer.footer {
+      background: var(--black);
+      border-top: 1px solid var(--gray-800);
+      width: 100%;
+    }
+    .footer-inner {
+      max-width: var(--container); margin: 0 auto; padding: 24px;
+      display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    }
+    .footer-brand img { height: 48px; width: auto; }
+    .copy { color: var(--gray-200); font-size: 14px; }
+
+    /* ===== Desktop 仅：容器 100% 宽度已满足；下面是简单的响应增强（可选） ===== */
+    @media (max-width: 1200px) {
+      .review-grid { grid-template-columns: repeat(3, 1fr); }
+      .service-grid { grid-template-columns: repeat(3, 1fr); }
+      .why-row { flex-direction: column; }
+      .cta-card { grid-template-columns: 1fr; }
+      .faq-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      .hero-row { flex-direction: column; }
+      .review-grid { grid-template-columns: 1fr; }
+      .service-grid { grid-template-columns: 1fr; }
+      .faq-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- Header -->
+    <header class="nav" aria-label="Main">
+      <div class="nav-inner">
+        <div class="brand">
+          <img src="./images/nav_logo.png" alt="Snake The Drain Logo" />
+        </div>
+        <div class="nav-actions">
+          <a href="tel:+1234567890" class="btn-pill" aria-label="Click to call now">
+            <img class="btn-icon" src="./images/phone_call_icon_yellow.svg" alt="Snake The Drain Logo" />
+
+            <span style="color: white;">Click to call now</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="section hero" aria-label="Hero">
+      <div class="container">
+        <div class="hero-row">
+          <div class="hero-col">
+            <!-- <div class="badge-row">
+              <div class="google-badge">
+                <img src="img/google-icon.png" class="google-icon" alt="Google" />
+                <div class="rating-col">
+                  <div class="rating-top">
+                    <span class="label">Google Rating</span>
+                    <a class="label" href="#" aria-label="See all Google reviews">400+ reviews</a>
+                  </div>
+                  <div class="rating-bottom">
+                    <span class="rating-score">4.8</span>
+                    <img src="img/frame-4.svg" alt="5 stars" />
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <div class="">
+                <img src="./images/other_award.png" alt="Snake The Drain Logo" />
+            </div>
+
+            <div>
+              <div class="eyebrow">Same Day Quotes and Service</div>
+              <h1 class="hero-title">
+                <span class="accent">Expert Plumbers</span> On Long Island
+              </h1>
+            </div>
+
+            <div class="">
+                <img src="./images/award_wrap.png" alt="Snake The Drain Logo" />
+            </div>
+
+            <div class="hero-cta-row">
+              <a href="tel:+1234567890" class="btn" aria-label="Click to call now">
+                 <img class="btn-icon" src="./images/phone_call_icon.svg" alt="Snake The Drain Logo" />
+                  <span>Click to call now</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-col">
+            <div class="hero-image" role="img" aria-label="Snake The Drain team photo">
+              <img src="./images/hero_img.png" alt="Snake The Drain team photo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee Offer -->
+    <section class="section marquee" aria-label="Special offer banner">
+      <div class="container">
+        <div class="marquee-inner">
+          <div class="marquee-track" aria-hidden="true">
+            <div class="marquee-item">$50 off for your first service</div>
+            <div class="marquee-item">$50 off for your first service</div>
+            <div class="marquee-item">$50 off for your first service</div>
+            <div class="marquee-item">$50 off for your first service</div>
+            <div class="marquee-item">$50 off for your first service</div>
+            <div class="marquee-item">$50 off for your first service</div>
+            <!-- 复制两遍确保无缝滚动 -->
+            <div class="marquee-item">$50 off for your first service</div>
+            <div class="marquee-item">$50 off for your first service</div>
+            <div class="marquee-item">$50 off for your first service</div>
+            <div class="marquee-item">$50 off for your first service</div>
+            <div class="marquee-item">$50 off for your first service</div>
+            <div class="marquee-item">$50 off for your first service</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form (占位图) -->
+    <section class="section contact" aria-label="Contact form">
+      <div class="container">
+        <div class="contact-card">
+          <img src="img/contact-form-section.svg" alt="Contact form" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="section reviews" aria-labelledby="reviews-heading">
+      <div class="container">
+        <h2 id="reviews-heading">See What Snake The Drain Customer Have To Say</h2>
+
+        <div class="review-grid">
+          <!-- 1 -->
+          <article class="review-card">
+            <div class="review-head">
+              <div class="profile">
+                <img class="avatar" src="img/image.png" alt="Kris Z profile" />
+                <div>
+                  <div class="name">Kris Z</div>
+                  <time class="date" datetime="2025-09-22">September 22, 2025</time>
+                </div>
+              </div>
+              <div class="stars"><img src="img/image-2.svg" alt="5 star rating" /></div>
+            </div>
+            <div class="review-body">
+              I have had a miserable run of luck with the plumbing in my home in the last year and Snake…
+            </div>
+            <div class="review-actions">
+              <button class="readmore" aria-label="Read more of Kris Z's review">Read more</button>
+            </div>
+          </article>
+
+          <!-- 2 -->
+          <article class="review-card">
+            <div class="review-head">
+              <div class="profile">
+                <img class="avatar" src="img/image-3.png" alt="Nabiha K profile" />
+                <div>
+                  <div class="name">Nabiha K</div>
+                  <time class="date" datetime="2025-09-02">September 2, 2025</time>
+                </div>
+              </div>
+              <div class="stars"><img src="img/image-7.svg" alt="5 star rating" /></div>
+            </div>
+            <div class="review-body">Well if you want the surgeons of plumbing…</div>
+            <div class="review-actions">
+              <button class="readmore" aria-label="Read more of Nabiha K's review">Read more</button>
+            </div>
+          </article>
+
+          <!-- 3 -->
+          <article class="review-card">
+            <div class="review-head">
+              <div class="profile">
+                <img class="avatar" src="img/image-2.png" alt="John R profile" />
+                <div>
+                  <div class="name">John R</div>
+                  <time class="date" datetime="2025-08-29">August 29, 2025</time>
+                </div>
+              </div>
+              <div class="stars"><img src="img/image-5.svg" alt="5 star rating" /></div>
+            </div>
+            <div class="review-body">Very professional, willing to work with me.</div>
+          </article>
+
+          <!-- 4 -->
+          <article class="review-card">
+            <div class="review-head">
+              <div class="profile">
+                <img class="avatar" src="img/image-6.png" alt="Anjelica profile" />
+                <div>
+                  <div class="name">Anjelica</div>
+                  <time class="date" datetime="2025-08-25">August 25, 2025</time>
+                </div>
+              </div>
+              <div class="stars"><img src="img/image-4.svg" alt="5 star rating" /></div>
+            </div>
+            <div class="review-body">Steve did a Great Job at our home. He was very kind and knows his job very well!</div>
+          </article>
+
+          <!-- 5 -->
+          <article class="review-card">
+            <div class="review-head">
+              <div class="profile">
+                <img class="avatar" src="img/image-5.png" alt="Diane E profile" />
+                <div>
+                  <div class="name">Diane E</div>
+                  <time class="date" datetime="2025-08-24">August 24, 2025</time>
+                </div>
+              </div>
+              <div class="stars"><img src="img/image-3.svg" alt="5 star rating" /></div>
+            </div>
+            <div class="review-body">Just had the best experience with Snake the Plumber! First time customer…I called them…</div>
+            <div class="review-actions">
+              <button class="readmore" aria-label="Read more of Diane E's review">Read more</button>
+            </div>
+          </article>
+
+          <!-- 6 -->
+          <article class="review-card">
+            <div class="review-head">
+              <div class="profile">
+                <img class="avatar" src="img/image-4.png" alt="Diane E profile" />
+                <div>
+                  <div class="name">Diane E</div>
+                  <time class="date" datetime="2025-08-24">August 24, 2025</time>
+                </div>
+              </div>
+              <div class="stars"><img src="img/image-6.svg" alt="5 star rating" /></div>
+            </div>
+            <div class="review-body">Just had the best experience with Snake the Plumber! First time customer…I called them…</div>
+            <div class="review-actions">
+              <button class="readmore" aria-label="Read more of Diane E's review">Read more</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section services" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="services-head">
+          <h2 id="services-heading" class="services-title">
+            <span>Our </span><span class="accent">Plumbing</span><span> Company </span><span class="accent">Services</span>
+          </h2>
+          <p class="services-sub">Comprehensive plumbing solutions for Long Island</p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-icon">
+              <img src="img/plumbing-service-icon.svg" alt="" aria-hidden="true" />
+            </div>
+            <h3 class="service-name">Plumbing Service</h3>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">
+              <img src="img/toilet-1-1.png" alt="" />
+            </div>
+            <h3 class="service-name">Toilet Repair Service</h3>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">
+              <img src="img/simulation.svg" alt="" aria-hidden="true" />
+            </div>
+            <h3 class="service-name">Drain Cleaning Service</h3>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">
+              <img src="img/simulation-2.svg" alt="" aria-hidden="true" />
+            </div>
+            <h3 class="service-name">Pipe Repair and Replacement Service</h3>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">
+              <img src="img/vector-30.svg" alt="Hot Water Heater icon" />
+            </div>
+            <h3 class="service-name">Hot Water Heater Repair &amp; Installation Service</h3>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">
+              <img src="img/simulation-3.svg" alt="" aria-hidden="true" />
+            </div>
+            <h3 class="service-name">24/7 Emergency Plumbing Services</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section why" aria-labelledby="why-heading">
+      <div class="container">
+        <h2 id="why-heading">Why Choose Our 24-Hour Plumbing Services?</h2>
+        <div class="why-row">
+          <div class="why-media" role="img" aria-label="Plumber working on site">
+            <img src="img/screenshot-2025-10-02-at-2-59-55-PM-1.png" alt="Plumber working on site" />
+          </div>
+
+          <div class="why-content">
+            <div class="why-sub">Experience honesty, reliability, and affordability with every job we do.</div>
+
+            <div class="why-points">
+              <div class="why-point"><span class="dot" aria-hidden="true"></span> Honest Pricing</div>
+              <div class="why-point"><span class="dot" aria-hidden="true"></span> Owner-Operated</div>
+              <div class="why-point"><span class="dot" aria-hidden="true"></span> Job-Based Quotes</div>
+              <div class="why-point"><span class="dot" aria-hidden="true"></span> Fully Stocked Trucks</div>
+              <div class="why-point"><span class="dot" aria-hidden="true"></span> Experienced Plumbers</div>
+              <div class="why-point"><span class="dot" aria-hidden="true"></span> Background Checked</div>
+            </div>
+
+            <div>
+              <a href="tel:+1234567890" class="btn" aria-label="Click to call now" style="background-color: ;">
+                <span class="btn-icon">☎</span> Click to call now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ + CTA -->
+    <section class="section faq-cta">
+      <div class="container faq-wrap">
+        <h2 class="faq-title">
+          <span>Answers to Common </span><span style="color:#fad66d">Plumbing Inquiries</span>
+        </h2>
+
+        <div class="faq-grid">
+          <div class="faq-col">
+            <details class="faq">
+              <summary>
+                <span>What kind of Suffolk County plumbing services do you offer?</span>
+                <span class="arrow">⌄</span>
+              </summary>
+              <p>We handle leaks, clogs, toilet repairs, drain cleaning, pipe replacements, water heaters, and more.</p>
+            </details>
+
+            <details class="faq">
+              <summary>
+                <span>Do you offer emergency plumbing services on Long Island?</span>
+                <span class="arrow">⌄</span>
+              </summary>
+              <p>Yes, our team is available 24/7 for urgent issues across Long Island.</p>
+            </details>
+          </div>
+
+          <div class="faq-col">
+            <details class="faq">
+              <summary>
+                <span>How much do your plumbing services cost on Long Island?</span>
+                <span class="arrow">⌄</span>
+              </summary>
+              <p>We provide job-based quotes with honest pricing before any work begins.</p>
+            </details>
+
+            <details class="faq">
+              <summary>
+                <span>What neighbourhoods do you serve?</span>
+                <span class="arrow">⌄</span>
+              </summary>
+              <p>We serve Nassau &amp; Suffolk counties and surrounding areas.</p>
+            </details>
+          </div>
+
+          <div class="faq-col">
+            <details class="faq">
+              <summary>
+                <span>Are your plumbers licensed and insured on Long Island?</span>
+                <span class="arrow">⌄</span>
+              </summary>
+              <p>Absolutely—our plumbers are fully licensed, insured, and background checked.</p>
+            </details>
+
+            <details class="faq">
+              <summary>
+                <span>Why is Snake the Drain the best plumber near you?</span>
+                <span class="arrow">⌄</span>
+              </summary>
+              <p>Owner-operated quality, honest pricing, and fast, reliable service.</p>
+            </details>
+          </div>
+        </div>
+
+        <div class="cta-card" aria-label="Call to action">
+          <div class="cta-media">
+            <img src="img/image-23.png" alt="Plumber at work" />
+          </div>
+          <div class="cta-content">
+            <div class="cta-eyebrow">Ready to Help</div>
+            <div class="cta-title">
+              <span class="accent">Get Started</span> With Us Today!
+            </div>
+            <div class="cta-text">
+              Fast, reliable plumbing solutions are just one call away. Let our experts take care of your home today.
+            </div>
+            <div>
+              <a href="tel:+1234567890" class="btn" aria-label="Click to call now">
+                <span class="btn-icon">☎</span> Click to call now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="img/screenshot-2025-10-01-at-5-37-38-PM-1.png" alt="Snake The Drain Logo" />
+        </div>
+        <div class="copy">© 2025 SnakeTheDrain, All rights reserved.</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
