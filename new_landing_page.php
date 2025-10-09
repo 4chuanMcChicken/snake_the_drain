@@ -1,0 +1,1546 @@
+<?php
+/*
+Template Name: Test
+ */
+?>
+<?php get_header(); ?>
+
+
+
+    <style>
+      /* ===== Meyer Reset (subset) ===== */
+      @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+      /* Hide call text on mobile */
+      .call-text-nav {
+        display: inline;
+        color: white;
+      }
+      .mobile-fixed-call {
+        display: none !important;
+    }
+
+      .main-footer {
+        display: none !important;
+      }
+      .fui-brand {
+        display: none !important;
+      }
+      .ti-fade-container {
+        display: none !important;
+      }
+      .fui-navbar{
+        display: none !important;
+      }
+      @media (max-width: 768px) {
+        .main-header{
+            display: none !important;
+        }
+        .why-points {
+          grid-template-columns: 1fr !important;
+        }
+        .services {
+          padding: 40px 0 !important;
+        }
+        .services-title {
+          font-size: 22px !important;
+          line-height: 28px !important;
+        }
+        .services-sub {
+          font-size: var(--body) !important;
+          line-height: var(--body-line) !important;
+          font-weight: 500;
+          text-align: left;
+        }
+        .reviews h2 {
+          font-size: 22px !important;
+          line-height: 28px !important;
+        }
+        .brand img {
+          height: 48px !important;
+          width: auto !important;
+        }
+        .contact-img-col {
+          display: none !important;
+        }
+        .call-text-nav {
+          display: none !important;
+        }
+        .why {
+          padding: 40px 0 !important;
+        }
+        .call-text {
+          font-size: 16px !important;
+        }
+      }
+
+      /* ===== Variables ===== */
+      :root {
+        --yellow: rgba(250, 215, 110, 1);
+        --transbg: rgba(29, 29, 29, 1);
+        --stroke: rgba(52, 52, 52, 1);
+        --black: rgba(0, 0, 0, 1);
+        --secondary-color50: rgba(247, 253, 255, 1);
+        --gray-50: rgba(255, 255, 255, 1);
+        --gray-200: rgba(238, 242, 246, 1);
+        --gray-300: rgba(204, 213, 223, 1);
+        --gray-700: rgba(54, 65, 81, 1);
+        --gray-800: rgba(30, 40, 45, 1);
+
+        --container: 1200px;
+
+        /* 字体层次（保留你原来的等级风格） */
+        --h1: 72px;
+        --h1-line: 88px;
+        --h2: 40px;
+        --h2-line: 56px;
+        --h3: 28px;
+        --h3-line: 38px;
+        --body-lg: 18px;
+        --body-lg-line: 28px;
+        --body: 16px;
+        --body-line: 24px;
+      }
+
+      /* ===== Base ===== */
+      * {
+        -webkit-font-smoothing: antialiased;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto,
+          Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+        background: var(--black);
+        color: var(--gray-50);
+        margin: 0;
+      }
+        html, body {
+        overflow: auto !important;
+        overflow-x: auto !important;
+        overflow-y: auto !important;
+        }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      button:focus-visible {
+        outline: 2px solid #4a90e2 !important;
+        outline-offset: 2px;
+      }
+
+      /* ===== Layout Helpers ===== */
+      .page {
+        display: flex;
+        flex-direction: column;
+        min-height: 100dvh;
+        width: 100%;
+      }
+      .section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .container {
+        width: 100%;
+        max-width: var(--container);
+        padding: 0 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      /* ===== Header ===== */
+      header.nav {
+        width: 100%;
+        background: var(--black);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        /* border-bottom: 1px solid var(--gray-800); */
+      }
+      .nav-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 20px 24px;
+        max-width: var(--container);
+        margin: 0 auto;
+        width: 100%;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .brand img {
+        height: 86px;
+        width: auto;
+      }
+      .nav-actions {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      /* ===== Buttons ===== */
+      .btn,
+      .btn-pill {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 16px 30px;
+        border-radius: 48px;
+        background: #1d1d1d;
+        color: var(--black);
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 24px;
+        cursor: pointer;
+        box-shadow: 0 2px 6px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      @media (max-width: 768px) {
+        .btn,
+        .btn-pill {
+          background: none !important;
+          padding: 6px 0;
+          width: 100%;
+        }
+      }
+      /* Only .btn gets yellow background and custom hover */
+      .btn {
+        background: var(--yellow) !important;
+        color: var(--black) !important;
+        box-shadow: none !important;
+      }
+      .btn:hover {
+        cursor: pointer;
+        background: #fdb022 !important;
+        color: var(--black) !important;
+        box-shadow: none !important;
+        transform: translateY(-2px);
+      }
+      .btn:active {
+        background: #fdb022 !important;
+        color: var(--black) !important;
+        box-shadow: none !important;
+        transform: translateY(0);
+      }
+      /* .btn-pill keeps original hover shadow */
+      .btn-pill:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(250, 215, 110, 0.4);
+      }
+      .btn-pill:active {
+        transform: translateY(0);
+      }
+
+      .btn-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 10px;
+        border-radius: 999px;
+        color: var(--gray-50);
+      }
+      .btn.call-now-yellow {
+        background: var(--yellow);
+        color: var(--black);
+      }
+
+      /* ===== Hero ===== */
+      .hero {
+        background: var(--black) url("https://www.snakethedrain.com/wp-content/uploads/2025/10/bg.png") center center/cover
+          no-repeat;
+        padding: 50px 0;
+        width: 100%;
+      }
+      .hero .container {
+        gap: 36px;
+      }
+      .hero-row {
+        display: flex;
+        gap: 48px;
+        align-items: center;
+        width: 100%;
+      }
+      .hero-col {
+        flex: 1 1 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        /* background moved to .hero */
+      }
+      .badge-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      /* Center hero section content on mobile */
+      @media (max-width: 768px) {
+        .hero-row {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        .hero-col {
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
+        .eyebrow,
+        .hero-title {
+          text-align: center;
+          width: 100%;
+        }
+        .hero-cta-row {
+          justify-content: center;
+          width: 100%;
+        }
+        .hero-image {
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .hero {
+          padding: 10px 0;
+        }
+      }
+      .google-badge {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        padding: 12px;
+        border-radius: 12px;
+        border: 1px solid var(--stroke);
+        background: var(--transbg);
+      }
+      .google-badge img.google-icon {
+        width: 46px;
+        height: 46px;
+      }
+      .rating-col {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+      .rating-top {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+      }
+      .rating-top .label {
+        color: #ccd5df;
+        font-size: 14px;
+      }
+      .rating-bottom {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+      }
+      .rating-score {
+        color: var(--yellow);
+        font-weight: 600;
+      }
+
+      .eyebrow {
+        color: var(--secondary-color50);
+        font-size: 40px;
+        line-height: 48px;
+        font-weight: 500;
+        text-align: left;
+      }
+
+      @media (max-width: 768px) {
+        .eyebrow {
+          font-size: 22px !important;
+          text-align: center !important;
+        }
+        .hero-title {
+          font-size: 38px !important;
+          text-align: center !important;
+          line-height: 40px !important;
+        }
+      }
+
+      .hero-title {
+        font-size: 60px;
+        line-height: 72px;
+        font-weight: 600;
+        color: var(--gray-50);
+      }
+      .hero-title .accent {
+        color: #fad66d;
+      }
+      .hero-cta-row {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+
+      .hero-image {
+        width: 480px;
+        max-width: 100%;
+        border-radius: 20px;
+        background: #111;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        aspect-ratio: 1/1; /* 无固定高度 */
+      }
+      @media (max-width: 768px) {
+        .hero-image {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+      }
+      .hero-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      /* ===== Marquee（优惠横幅）===== */
+      .marquee {
+        background: #fdb022;
+        color: var(--black);
+        width: 100%;
+      }
+      @media (max-width: 768px) {
+        .marquee {
+          display: none !important;
+        }
+      }
+
+      .marquee-mobile {
+        background: #fdb022;
+        color: var(--black);
+        width: 100%;
+        display: none;
+      }
+      .marquee-inner {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        padding: 12px 0;
+        overflow: hidden;
+      }
+      .marquee-track {
+        display: flex;
+        gap: 24px;
+        white-space: nowrap;
+        animation: scroll 18s linear infinite;
+      }
+      .marquee-item {
+        font-weight: 500;
+        font-size: 20px;
+      }
+      @keyframes scroll {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-50%);
+        }
+      }
+
+      /* ===== Contact (占位图) ===== */
+      .contact {
+        background: #fff;
+        padding: 48px 0;
+      }
+      .contact-card {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-radius: 16px;
+        border: 1px solid var(--gray-800);
+        overflow: hidden;
+        background: #0c0c0c;
+        padding: 0;
+      }
+      .contact-card img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      /* ===== Reviews ===== */
+      .reviews {
+        background: var(--yellow);
+        color: var(--black);
+        padding: 64px 0;
+      }
+      .reviews-title {
+        font-size: var(--h3);
+        line-height: var(--h3-line);
+        font-weight: 600;
+        text-align: left;
+        width: 100%;
+        margin-bottom: 16px;
+      }
+      .reviews .container {
+        gap: 28px;
+      }
+      .reviews h2 {
+        padding: 0;
+        font-size: var(--h2);
+        line-height: var(--h2-line);
+        color: var(--black);
+      }
+      .review-grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 18px;
+      }
+      .review-card {
+        background: #fff;
+        color: var(--black);
+        border-radius: 14px;
+        border: 2px solid #eee;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 20px;
+      }
+      .review-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+      }
+      .profile {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .avatar {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .name {
+        font-weight: 600;
+      }
+      .date {
+        color: #8a8a8a;
+        font-size: 14px;
+      }
+      .stars {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+      }
+      .review-body {
+        font-size: 16px;
+        line-height: 24px;
+      }
+      .review-actions {
+        display: flex;
+      }
+      .readmore {
+        font-size: 15px;
+        opacity: 0.7;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        padding: 6px 0;
+        color: var(--black);
+      }
+
+      /* 让 6 卡片在桌面一行展示（和你原始 6 个卡片对应） */
+      .review-grid > * {
+        min-width: 0;
+      }
+
+      /* ===== Services ===== */
+      .services {
+        background: var(--black);
+        padding: 96px 0;
+      }
+      .services-head {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 8px;
+      }
+      .services-title {
+        font-size: var(--h2);
+        line-height: var(--h2-line);
+        font-weight: 600;
+      }
+      .services-title .accent {
+        color: #fad66d;
+      }
+      .services-sub {
+        font-size: var(--body-lg);
+        line-height: var(--body-lg-line);
+        color: #fff;
+        max-width: 480px;
+      }
+      .service-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        width: 100%;
+      }
+      .service-card {
+        border: 1px solid var(--yellow);
+        border-radius: 16px;
+        background: #1d1d1d;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 24px;
+        min-height: 160px;
+      }
+      @media (max-width: 768px) {
+        .marquee-mobile .marquee-track {
+          animation-duration: 2s !important;
+        }
+        .marquee-mobile {
+          display: block !important;
+        }
+        .reviews {
+          padding: 40px 0;
+        }
+        .contact {
+          padding: 40px 0;
+        }
+        .service-card {
+          flex-direction: row !important;
+          align-items: center !important;
+          gap: 16px !important;
+          min-height: 100px !important;
+          padding: 16px !important;
+        }
+        .service-icon {
+          width: 56px !important;
+          height: 56px !important;
+          margin-right: 12px !important;
+        }
+        .service-name {
+          font-size: 16px !important;
+          line-height: 22px !important;
+        }
+      }
+      .service-icon {
+        width: 70px;
+        height: 70px;
+        border-radius: 999px;
+        background: #ffffff40;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+      .service-icon img {
+        object-fit: contain;
+      }
+      .service-name {
+        font-size: 20px;
+        line-height: 36px;
+        color: var(--gray-50);
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      .service-name .accent {
+        color: #fad66d !important;
+        text-transform: uppercase;
+      }
+
+      /* ===== Why Choose Us ===== */
+      .why {
+        background: #fff;
+        color: var(--black);
+        padding: 96px 0;
+      }
+      .why h2 {
+        text-align: left;
+        font-size: var(--h2);
+        line-height: var(--h2-line);
+        margin-bottom: 16px;
+      }
+      .why-row {
+        display: flex;
+        gap: 48px;
+        width: 100%;
+        align-items: stretch;
+        justify-content: center;
+      }
+      .why-media,
+      .why-content {
+        flex: 1 1 0;
+        display: flex;
+      }
+      .why-media {
+        border-radius: 16px;
+        overflow: hidden;
+        background: #d3d3d3;
+      }
+      @media (max-width: 768px) {
+        .why h2 {
+          font-size: 22px !important;
+          line-height: 28px !important;
+        }
+        .why-sub {
+          font-size: 16px !important;
+          line-height: 22px !important;
+        }
+        .why-point {
+          font-size: 14px !important;
+          line-height: 20px !important;
+        }
+
+        .why-title {
+          font-size: var(--h2) !important;
+          line-height: var(--h2-line) !important;
+          font-weight: 600 !important;
+        }
+        .why-media {
+          margin-top: 10px !important;
+          min-height: 350px !important;
+        }
+      }
+      .why-media img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+      .why-content {
+        flex-direction: column;
+        gap: 24px;
+        justify-content: center;
+      }
+      .why-sub {
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--gray-300);
+        font-size: 28px;
+        line-height: 36px;
+      }
+      .why-points {
+        display: grid;
+        gap: 18px;
+        grid-template-columns: 1fr 1fr;
+      }
+      .why-point {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 18px;
+        line-height: 28px;
+      }
+      .why-point .dot {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: var(--black);
+        display: inline-block;
+      }
+
+      /* ===== FAQ + CTA ===== */
+      .faq-cta {
+        background: var(--black);
+        color: #fff;
+        padding: 96px 0 48px;
+      }
+      @media (max-width: 768px) {
+        .faq-cta {
+          padding: 40px 0 0px !important;
+        }
+      }
+      .faq-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+      .faq-title {
+        text-align: left;
+        font-size: var(--h2);
+        line-height: var(--h2-line);
+        margin-bottom: 0;
+        width: 100%;
+        display: block;
+      }
+      .faq-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, auto);
+        gap: 24px;
+        justify-items: start;
+      }
+      .faq-col {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+      details.faq {
+        border-bottom: 1px solid var(--gray-700);
+        padding-bottom: 16px;
+        width: 100%;
+      }
+      details.faq summary {
+        cursor: pointer;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        text-align: left;
+      }
+      details.faq[open] summary .arrow {
+        transform: rotate(180deg);
+      }
+      .arrow {
+        transition: transform 0.25s ease;
+      }
+      details.faq p {
+        margin-top: 12px;
+        color: #e5e7eb;
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .cta-card {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+        width: 100%;
+        border: 2px solid var(--gray-800);
+        border-radius: 48px;
+        overflow: hidden;
+        background: #0b0b0b;
+      }
+      .cta-media {
+        width: 100%;
+      }
+      .cta-media img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      .cta-content {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: center;
+        padding: 40px;
+        background: url("https://www.snakethedrain.com/wp-content/uploads/2025/10/bg.png") center center/cover no-repeat;
+      }
+      .cta-eyebrow {
+        font-weight: 600;
+      }
+      .cta-title {
+        font-size: 40px;
+        line-height: 56px;
+        font-weight: 600;
+      }
+      .cta-title .accent {
+        color: #fad66d;
+      }
+      .cta-text {
+        font-size: var(--body-lg);
+        line-height: var(--body-lg-line);
+      }
+
+      /* ===== Footer ===== */
+      footer.footer {
+        background: var(--black);
+        border-top: 1px solid var(--gray-800);
+        width: 100%;
+      }
+      .footer-inner {
+        max-width: var(--container);
+        margin: 0 auto;
+        padding: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+      .footer-brand img {
+        height: 48px;
+        width: auto;
+      }
+      .copy {
+        color: var(--gray-200);
+        font-size: 14px;
+      }
+
+      /* @media (min-width: 1800px) {
+        :root {
+          --container: 1800px;
+        }
+      } */
+      @media (max-width: 1200px) {
+        .review-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .service-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .why-row {
+          flex-direction: column;
+          gap: 10px;
+        }
+        .cta-card {
+          grid-template-columns: 1fr;
+        }
+        .faq-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media (max-width: 768px) {
+        details.faq summary {
+          font-size: 12px !important;
+          line-height: 18px !important;
+        }
+        details.faq p {
+          font-size: 12px !important;
+          line-height: 18px !important;
+        }
+        .hero-row {
+          flex-direction: column;
+        }
+        .review-grid {
+          grid-template-columns: 1fr;
+        }
+        .service-grid {
+          grid-template-columns: 1fr;
+        }
+        .faq-grid {
+          grid-template-columns: 1fr;
+        }
+        .why > .container {
+          gap: 0px !important;
+        }
+        .faq-title {
+          font-size: var(--h3) !important;
+          line-height: var(--h3-line) !important;
+          font-weight: 600 !important;
+        }
+        .faq-wrap {
+          gap: 20px !important;
+        }
+        .cta-card {
+          border: none !important;
+          background: var(--black);
+        }
+        .cta-content {
+          background: none !important;
+          padding: 40px 0px;
+          gap: 20px !important;
+        }
+        .cta-title {
+          font-size: var(--h3) !important;
+          line-height: var(--h3-line) !important;
+        }
+        .cta-text {
+          font-size: var(--body) !important;
+          line-height: var(--body-line) !important;
+        }
+      }
+    </style>
+
+  <body>
+    <div class="page">
+      <!-- Header -->
+      <header class="nav" aria-label="Main">
+        <div class="nav-inner">
+          <div class="brand">
+            <img src="https://www.snakethedrain.com/wp-content/uploads/2025/10/nav_logo.png" alt="Snake The Drain Logo" />
+          </div>
+          <div class="nav-actions">
+            <a
+              href="tel:+16316418735"
+              class="btn-pill"
+              aria-label="Click to call now"
+            >
+              <img
+                class="btn-icon"
+                src="https://www.snakethedrain.com/wp-content/uploads/2025/10/phone_call_icon_yellow.svg"
+                alt="Snake The Drain Logo"
+              />
+              <span class="call-text-nav">Click to call now</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Hero -->
+      <section class="section hero" aria-label="Hero">
+        <div class="container">
+          <div class="hero-row">
+            <div class="hero-col">
+              <!-- <div class="badge-row">
+              <div class="google-badge">
+                <img src="img/google-icon.png" class="google-icon" alt="Google" />
+                <div class="rating-col">
+                  <div class="rating-top">
+                    <span class="label">Google Rating</span>
+                    <a class="label" href="#" aria-label="See all Google reviews">400+ reviews</a>
+                  </div>
+                  <div class="rating-bottom">
+                    <span class="rating-score">4.8</span>
+                    <img src="img/frame-4.svg" alt="5 stars" />
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+              <div>
+                <div class="eyebrow">Same Day Quotes and Service</div>
+                <h1 class="hero-title">
+                  <span class="accent">Expert Plumbers</span> On Long Island
+                </h1>
+              </div>
+
+              <div class="">
+                <img src="https://www.snakethedrain.com/wp-content/uploads/2025/10/award_wrap.png" alt="Snake The Drain Logo" />
+              </div>
+
+              <div class="">
+                <img
+                  src="https://www.snakethedrain.com/wp-content/uploads/2025/10/other_award.png"
+                  alt="Snake The Drain Logo"
+                />
+              </div>
+
+              <div class="hero-cta-row">
+                <a
+                  href="tel:+16316418735"
+                  class="btn"
+                  aria-label="Click to call now"
+                >
+                  <img
+                    class="btn-icon"
+                    src="https://www.snakethedrain.com/wp-content/uploads/2025/10/phone_call_icon.svg"
+                    alt="Snake The Drain Logo"
+                  />
+                  <span class="call-text">Click to call now</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="hero-col">
+              <!-- 手机版显示的优惠横幅 -->
+              <section class="section marquee-mobile container">
+                <div class="marquee-inner">
+                  <div
+                    class="marquee-track"
+                    aria-hidden="true"
+                    style="max-width: 90vw !important"
+                  >
+                    <div class="marquee-item">
+                      $50 off for your first service
+                    </div>
+                    <div class="marquee-item">
+                      $50 off for your first service
+                    </div>
+                    <div class="marquee-item">
+                      $50 off for your first service
+                    </div>
+                    <div class="marquee-item">
+                      $50 off for your first service
+                    </div>
+                    <div class="marquee-item">
+                      $50 off for your first service
+                    </div>
+                    <div class="marquee-item">
+                      $50 off for your first service
+                    </div>
+                    <div class="marquee-item">
+                      $50 off for your first service
+                    </div>
+                    <div class="marquee-item">
+                      $50 off for your first service
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <div
+                class="hero-image"
+                role="img"
+                aria-label="Snake The Drain team photo"
+              >
+                <img
+                  src="https://www.snakethedrain.com/wp-content/uploads/2025/10/hero_img.png"
+                  alt="Snake The Drain team photo"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Marquee Offer -->
+      <section class="section marquee" aria-label="Special offer banner">
+        <div class="container" style="max-width: 100% !important">
+          <div class="marquee-inner">
+            <div class="marquee-track" aria-hidden="true">
+              <div class="marquee-item">$50 off for your first service</div>
+              <div class="marquee-item">$50 off for your first service</div>
+              <div class="marquee-item">$50 off for your first service</div>
+              <div class="marquee-item">$50 off for your first service</div>
+              <div class="marquee-item">$50 off for your first service</div>
+              <div class="marquee-item">$50 off for your first service</div>
+              <div class="marquee-item">$50 off for your first service</div>
+              <div class="marquee-item">$50 off for your first service</div>
+              <div class="marquee-item">$50 off for your first service</div>
+              <div class="marquee-item">$50 off for your first service</div>
+              <div class="marquee-item">$50 off for your first service</div>
+              <div class="marquee-item">$50 off for your first service</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Form (占位图) -->
+      <section class="section contact" aria-label="Contact form">
+        <div class="container">
+          <div
+            class="contact-card contact-flex"
+            style="
+              background: none;
+              border: none;
+              padding: 0;
+              display: flex;
+              gap: 32px;
+              align-items: flex-start;
+              justify-content: center;
+            "
+          >
+            <div class="contact-form-col" style="flex: 1; min-width: 300px">
+              <script
+                async
+                src="https://online-booking.housecallpro.com/script.js?token=1c5511b762274b7eb304222be79acf78&orgName=Snake-the-drain-plumbing"
+              ></script>
+              <iframe
+                id="hcp-lead-iframe"
+                src="https://book.housecallpro.com/lead-form/Snake-the-drain-plumbing/1c5511b762274b7eb304222be79acf78"
+                style="border: none; width: 100%; min-height: 950px"
+                allowfullscreen
+                loading="lazy"
+              >
+              </iframe>
+            </div>
+            <div
+              class="contact-img-col"
+              style="display: flex; flex-direction: column; gap: 24px"
+            >
+              <img
+                src="https://www.snakethedrain.com/wp-content/uploads/2025/10/form_img_2.png"
+                alt="Contact illustration 2"
+                style="
+                  width: 100%;
+                  height: 540px;
+                  object-fit: cover;
+                  border-radius: 12px;
+                "
+              />
+              <img
+                src="https://www.snakethedrain.com/wp-content/uploads/2025/10/form_img_3.png"
+                alt="Contact illustration 3"
+                style="
+                  width: 100%;
+                  height: 540px;
+                  object-fit: cover;
+                  border-radius: 12px;
+                "
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reviews -->
+      <section class="reviews" aria-labelledby="reviews-heading">
+        <div class="fui-container">
+          <!-- Trustindex Widget Embed (for WordPress PHP, preview only) -->
+          <h2 id="reviews-heading" class="reviews-title">
+            See What Snake The Drain Customer Have To Say
+          </h2>
+           <?php echo do_shortcode('[trustindex data-widget-id=3828251528922263bd46dde16be]'); ?>
+
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="section services" aria-labelledby="services-heading">
+        <div class="container">
+          <div class="services-head">
+            <h2 id="services-heading" class="services-title">
+              <span>Our </span><span class="accent">Services</span>
+            </h2>
+            <p class="services-sub">
+              Comprehensive plumbing solutions for Long Island
+            </p>
+          </div>
+
+          <div class="service-grid">
+            <article class="service-card">
+              <div class="service-icon">
+                <img
+                  src="https://www.snakethedrain.com/wp-content/uploads/2025/10/plumbing_service_icon.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </div>
+              <h3 class="service-name">
+                <span class="accent">Plumbing</span> Service
+              </h3>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">
+                <img src="https://www.snakethedrain.com/wp-content/uploads/2025/10/simulation.svg" alt="" aria-hidden="true" />
+              </div>
+              <h3 class="service-name">
+                <span class="accent">Drain Cleaning</span> Service
+              </h3>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">
+                <img
+                  src="https://www.snakethedrain.com/wp-content/uploads/2025/10/drain-cleaning-service.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </div>
+              <h3 class="service-name">
+                <span class="accent">SEWER CLEANING</span> Service
+              </h3>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">
+                <img src="https://www.snakethedrain.com/wp-content/uploads/2025/10/pipe-repair.svg" alt="Hot Water Heater icon" />
+              </div>
+              <h3 class="service-name">
+                <span class="accent">HYDRO WATER JETTING</span> Service
+              </h3>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">
+                <img
+                  src="https://www.snakethedrain.com/wp-content/uploads/2025/10/hot-water-repair.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </div>
+              <h3 class="service-name">
+                <span class="accent">Pipe Repair</span> and
+                <span class="accent">Replacement</span>
+              </h3>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">
+                <img src="https://www.snakethedrain.com/wp-content/uploads/2025/10/24-7-emergency-service.svg" alt="" />
+              </div>
+              <h3 class="service-name">
+                <span class="accent">LEAKS</span> and
+                <span class="accent">BURSTS</span>
+              </h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose Us -->
+      <section class="section why" aria-labelledby="why-heading">
+        <div class="container">
+          <h2 id="why-heading" class="why-title">
+            Why Choose Our 24-Hour Plumbing Services?
+          </h2>
+          <div class="why-row">
+            <div class="why-content">
+              <div class="why-sub">
+                Experience honesty, reliability, and affordability with every
+                job we do.
+              </div>
+
+              <div class="why-points">
+                <div class="why-point">
+                  <img
+                    src="https://www.snakethedrain.com/wp-content/uploads/2025/10/money.svg"
+                    alt="Money icon"
+                    style="
+                      width: 32px;
+                      height: 32px;
+                      vertical-align: middle;
+                      margin-right: 8px;
+                    "
+                  />
+                  Honest Pricing
+                </div>
+                <div class="why-point">
+                  <img
+                    src="https://www.snakethedrain.com/wp-content/uploads/2025/10/family.svg"
+                    alt="Family icon"
+                    style="
+                      width: 32px;
+                      height: 32px;
+                      vertical-align: middle;
+                      margin-right: 8px;
+                    "
+                  />
+                  Family-Operated
+                </div>
+                <div class="why-point">
+                  <img
+                    src="https://www.snakethedrain.com/wp-content/uploads/2025/10/clipboard.svg"
+                    alt="Clipboard icon"
+                    style="
+                      width: 32px;
+                      height: 32px;
+                      vertical-align: middle;
+                      margin-right: 8px;
+                    "
+                  />
+                  Job-Based Quotes
+                </div>
+                <div class="why-point">
+                  <img
+                    src="https://www.snakethedrain.com/wp-content/uploads/2025/10/fast-delivery.svg"
+                    alt="Fast Delivery icon"
+                    style="
+                      width: 32px;
+                      height: 32px;
+                      vertical-align: middle;
+                      margin-right: 8px;
+                    "
+                  />
+                  Fully Stocked Trucks
+                </div>
+                <div class="why-point">
+                  <img
+                    src="https://www.snakethedrain.com/wp-content/uploads/2025/10/plumber.svg"
+                    alt="Plumber icon"
+                    style="
+                      width: 32px;
+                      height: 32px;
+                      vertical-align: middle;
+                      margin-right: 8px;
+                    "
+                  />
+                  Experienced Plumbers
+                </div>
+                <div class="why-point">
+                  <img
+                    src="https://www.snakethedrain.com/wp-content/uploads/2025/10/shield.svg"
+                    alt="Shield icon"
+                    style="
+                      width: 32px;
+                      height: 32px;
+                      vertical-align: middle;
+                      margin-right: 8px;
+                    "
+                  />
+                  Background Checked
+                </div>
+              </div>
+
+              <div>
+                <a
+                  href="tel:+16316418735"
+                  class="btn"
+                  aria-label="Click to call now"
+                >
+                  <img
+                    class="btn-icon"
+                    src="https://www.snakethedrain.com/wp-content/uploads/2025/10/phone_call_icon.svg"
+                    alt="Snake The Drain Logo"
+                  />
+                  <span class="call-text">Click to call now</span>
+                </a>
+              </div>
+            </div>
+            <div
+              class="why-media"
+              role="img"
+              aria-label="Plumber working on site"
+            >
+              <img
+                src="https://www.snakethedrain.com/wp-content/uploads/2025/10/why_choose_side_img.png"
+                alt="Plumber working on site"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ + CTA -->
+      <section class="section faq-cta">
+        <div class="container faq-wrap">
+          <h2 class="faq-title">
+            <span>Answers to Common </span
+            ><span style="color: #fad66d">Plumbing Inquiries</span>
+          </h2>
+
+          <div class="faq-grid">
+            <details class="faq">
+              <summary>
+                <span
+                  >What kind of Suffolk County plumbing services do you
+                  offer?</span
+                >
+                <span class="arrow">⌄</span>
+              </summary>
+              <p>
+                We offer a comprehensive range of plumbing services, including
+                drain cleaning, water heater installation and repair, pipe
+                repair and replacement, toilet repair, and emergency plumbing
+                services. Our team of Long Island plumbers is equipped to handle
+                any plumbing issue you may be experiencing, no matter how big or
+                small.
+              </p>
+            </details>
+            <details class="faq">
+              <summary>
+                <span
+                  >Do you offer emergency plumbing services on Long
+                  Island?</span
+                >
+                <span class="arrow">⌄</span>
+              </summary>
+              <p>
+                Yes, we provide 24/7 emergency plumbing services across Long
+                Island, including Suffolk County. Our same-day plumber service
+                ensures that you have access to reliable plumbing solutions
+                whenever you need them. If you're experiencing a plumbing
+                emergency, contact us immediately for prompt assistance.
+              </p>
+            </details>
+            <details class="faq">
+              <summary>
+                <span
+                  >How much do your plumbing services cost on Long Island?</span
+                >
+                <span class="arrow">⌄</span>
+              </summary>
+              <p>
+                We offer upfront pricing with no hidden fees, so you'll know the
+                cost of our services before we even begin the job. Our pricing
+                is competitive and transparent, ensuring you receive reliable
+                and affordable plumbing services. Trust us for honest pricing on
+                all plumbing solutions.
+              </p>
+            </details>
+            <details class="faq">
+              <summary>
+                <span>What neighborhoods Do You Serve?</span>
+                <span class="arrow">⌄</span>
+              </summary>
+              <p>
+                We’re proud to offer 24/7 plumbing services across every corner
+                of Suffolk County, New York. From bustling towns to quiet
+                coastal communities, we’re here to ensure your plumbing needs
+                are met with expertise and care. Here’s a closer look at the
+                areas we serve.<br />No matter where you’re located in Suffolk
+                or Nassau County, we’re your trusted partner for plumbing
+                emergencies, repairs, and maintenance. With a commitment to
+                quality and reliability, we’re here to keep your home or
+                business running smoothly—24 hours a day, 7 days a week. Let us
+                handle the hard work so you can enjoy peace of mind.
+              </p>
+            </details>
+            <details class="faq">
+              <summary>
+                <span
+                  >Are your plumbers licensed and insured on Long Island?</span
+                >
+                <span class="arrow">⌄</span>
+              </summary>
+              <p>
+                Yes, all of our plumbers are licensed and insured to ensure that
+                you're getting the highest level of professionalism and
+                expertise. We take pride in our team of experienced and
+                qualified Long Island plumbers who are committed to providing
+                the best possible service to our customers.
+              </p>
+            </details>
+            <details class="faq">
+              <summary>
+                <span>Why is Snake the Drain the best plumber near you?</span>
+                <span class="arrow">⌄</span>
+              </summary>
+              <p>
+                Snake The Drain is the best Suffolk County plumber because of
+                our fast response times, expert service, and affordable pricing.
+                Whether you need kitchen sink repair in East Hampton or a
+                complete plumbing overhaul in Melville, their skilled team
+                ensures top-quality workmanship. We specialize in removing
+                blockages in pipes, using advanced techniques to keep your
+                plumbing running smoothly.
+              </p>
+            </details>
+          </div>
+
+          <div class="cta-card" aria-label="Call to action">
+            <div class="cta-media">
+              <img src="https://www.snakethedrain.com/wp-content/uploads/2025/10/hero_img.png" alt="Plumber at work" />
+            </div>
+            <div class="cta-content">
+              <div class="cta-eyebrow">Ready to Help</div>
+              <div class="cta-title">
+                <span class="accent">Get Started</span> With Us Today!
+              </div>
+              <div class="cta-text">
+                Fast, reliable plumbing solutions are just one call away. Let
+                our experts take care of your home today.
+              </div>
+              <div>
+                <a
+                  href="tel:+16316418735"
+                  class="btn"
+                  aria-label="Click to call now"
+                >
+                  <img
+                    class="btn-icon"
+                    src="https://www.snakethedrain.com/wp-content/uploads/2025/10/phone_call_icon.svg"
+                    alt="Snake The Drain Logo"
+                  />
+                  <span class="call-text">Click to call now</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <img src="https://www.snakethedrain.com/wp-content/uploads/2025/10/nav_logo.png" alt="Snake The Drain Logo" />
+          </div>
+          <div class="copy">© 2025 SnakeTheDrain, All rights reserved.</div>
+        </div>
+      </footer>
+    </div>
+  </body>
+
+
+
+
+
+<?php get_footer(); ?>
