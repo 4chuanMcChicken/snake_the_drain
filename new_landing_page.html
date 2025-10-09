@@ -212,10 +212,10 @@
         transform: translateY(0);
       }
       /* .btn-pill keeps original hover shadow */
-      .btn-pill:hover {
+      /* .btn-pill:hover {
         transform: translateY(-2px);
         box-shadow: 0 4px 12px rgba(250, 215, 110, 0.4);
-      }
+      } */
       .btn-pill:active {
         transform: translateY(0);
       }
@@ -430,6 +430,21 @@
         }
       }
 
+      @media (max-width: 768px) {
+        @keyframes scroll-mobile {
+          from {
+            transform: translateX(0);
+          }
+          to {
+            transform: translateX(-600%);
+          }
+        }
+        .marquee-mobile .marquee-track {
+          animation-name: scroll-mobile !important;
+          animation-duration: 25s !important;
+        }
+      }
+
       /* ===== Contact (占位图) ===== */
       .contact {
         background: #fff;
@@ -585,7 +600,7 @@
       }
       @media (max-width: 768px) {
         .marquee-mobile .marquee-track {
-          animation-duration: 2s !important;
+          animation-duration: 25s !important;
         }
         .marquee-mobile {
           display: block !important;
@@ -668,6 +683,11 @@
         overflow: hidden;
         background: #d3d3d3;
       }
+    .why-title {
+          font-size: var(--h2) !important;
+          line-height: var(--h2-line) !important;
+          font-weight: 600 !important;
+        }
       @media (max-width: 768px) {
         .why h2 {
           font-size: 22px !important;
@@ -682,11 +702,6 @@
           line-height: 20px !important;
         }
 
-        .why-title {
-          font-size: var(--h2) !important;
-          line-height: var(--h2-line) !important;
-          font-weight: 600 !important;
-        }
         .why-media {
           margin-top: 10px !important;
           min-height: 350px !important;
@@ -935,6 +950,20 @@
           line-height: var(--body-line) !important;
         }
       }
+                  summary::-webkit-details-marker {
+        display: none;
+        }
+
+        /* Firefox / 现代浏览器 */
+        summary::marker {
+        content: '';
+        }
+
+        /* 避免 Safari 当成原生控件 */
+        summary {
+        -webkit-appearance: none;
+        appearance: none;
+        }
     </style>
   </head>
   <body>
@@ -1050,6 +1079,7 @@
                     <div class="marquee-item">
                       $50 off for your first service
                     </div>
+                    
                   </div>
                 </div>
               </section>
@@ -1383,7 +1413,7 @@
                   >What kind of Suffolk County plumbing services do you
                   offer?</span
                 >
-                <span class="arrow">⌄</span>
+                <img src="./images/down-arrow.svg" alt="Snake The Drain Logo" />
               </summary>
               <p>
                 We offer a comprehensive range of plumbing services, including
@@ -1400,7 +1430,7 @@
                   >Do you offer emergency plumbing services on Long
                   Island?</span
                 >
-                <span class="arrow">⌄</span>
+                <img src="./images/down-arrow.svg" alt="Snake The Drain Logo" />
               </summary>
               <p>
                 Yes, we provide 24/7 emergency plumbing services across Long
@@ -1415,7 +1445,7 @@
                 <span
                   >How much do your plumbing services cost on Long Island?</span
                 >
-                <span class="arrow">⌄</span>
+                <img src="./images/down-arrow.svg" alt="Snake The Drain Logo" />
               </summary>
               <p>
                 We offer upfront pricing with no hidden fees, so you'll know the
@@ -1428,7 +1458,7 @@
             <details class="faq">
               <summary>
                 <span>What neighborhoods Do You Serve?</span>
-                <span class="arrow">⌄</span>
+                <img src="./images/down-arrow.svg" alt="Snake The Drain Logo" />
               </summary>
               <p>
                 We’re proud to offer 24/7 plumbing services across every corner
@@ -1448,7 +1478,7 @@
                 <span
                   >Are your plumbers licensed and insured on Long Island?</span
                 >
-                <span class="arrow">⌄</span>
+                <img src="./images/down-arrow.svg" alt="Snake The Drain Logo" />
               </summary>
               <p>
                 Yes, all of our plumbers are licensed and insured to ensure that
@@ -1461,7 +1491,7 @@
             <details class="faq">
               <summary>
                 <span>Why is Snake the Drain the best plumber near you?</span>
-                <span class="arrow">⌄</span>
+                <img src="./images/down-arrow.svg" alt="Snake The Drain Logo" />
               </summary>
               <p>
                 Snake The Drain is the best Suffolk County plumber because of

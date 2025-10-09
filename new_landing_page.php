@@ -118,11 +118,17 @@ Template Name: Test
         color: var(--gray-50);
         margin: 0;
       }
-        html, body {
-        overflow: auto !important;
-        overflow-x: auto !important;
-        overflow-y: auto !important;
-        }
+/*     html, body {
+      overflow: auto !important;
+      overflow-x: auto !important;
+      overflow-y: auto !important;
+      position: static !important;
+      height: auto !important;
+    } */
+		html, body {
+		  overflow: visible !important;  /* 或者干脆删掉整段，让它恢复默认 */
+		  height: auto !important;
+		}
       a {
         text-decoration: none;
         color: inherit;
@@ -233,10 +239,10 @@ Template Name: Test
         transform: translateY(0);
       }
       /* .btn-pill keeps original hover shadow */
-      .btn-pill:hover {
+      /* .btn-pill:hover {
         transform: translateY(-2px);
         box-shadow: 0 4px 12px rgba(250, 215, 110, 0.4);
-      }
+      } */
       .btn-pill:active {
         transform: translateY(0);
       }
@@ -309,7 +315,7 @@ Template Name: Test
           margin-right: auto;
         }
         .hero {
-          padding: 10px 0;
+          padding: 0px 0px 40px 0px !important;
         }
       }
       .google-badge {
@@ -385,7 +391,7 @@ Template Name: Test
       }
 
       .hero-image {
-        width: 480px;
+        /* width: 480px; */
         max-width: 100%;
         border-radius: 20px;
         background: #111;
@@ -399,6 +405,7 @@ Template Name: Test
         .hero-image {
           width: 100% !important;
           max-width: 100% !important;
+        border-radius: 0px !important;
         }
       }
       .hero-image img {
@@ -449,6 +456,18 @@ Template Name: Test
         to {
           transform: translateX(-50%);
         }
+      }
+
+      @media (max-width: 768px) {
+        @keyframes scroll-mobile {
+          from {
+            transform: translateX(300%);
+          }
+          to {
+            transform: translateX(-300%);
+          }
+        }
+        
       }
 
       /* ===== Contact (占位图) ===== */
@@ -583,10 +602,9 @@ Template Name: Test
         color: #fad66d;
       }
       .services-sub {
-        font-size: var(--body-lg);
-        line-height: var(--body-lg-line);
+        font-size: 28px;
+        line-height: 36px;
         color: #fff;
-        max-width: 480px;
       }
       .service-grid {
         display: grid;
@@ -606,7 +624,7 @@ Template Name: Test
       }
       @media (max-width: 768px) {
         .marquee-mobile .marquee-track {
-          animation-duration: 2s !important;
+          animation-duration: 25s !important;
         }
         .marquee-mobile {
           display: block !important;
@@ -689,6 +707,11 @@ Template Name: Test
         overflow: hidden;
         background: #d3d3d3;
       }
+              .why-title {
+          font-size: var(--h2) !important;
+          line-height: var(--h2-line) !important;
+          font-weight: 600 !important;
+        }
       @media (max-width: 768px) {
         .why h2 {
           font-size: 22px !important;
@@ -703,11 +726,7 @@ Template Name: Test
           line-height: 20px !important;
         }
 
-        .why-title {
-          font-size: var(--h2) !important;
-          line-height: var(--h2-line) !important;
-          font-weight: 600 !important;
-        }
+
         .why-media {
           margin-top: 10px !important;
           min-height: 350px !important;
@@ -802,11 +821,12 @@ Template Name: Test
         font-weight: 500;
         text-align: left;
       }
-      details.faq[open] summary .arrow {
+      details.faq[open] summary img {
         transform: rotate(180deg);
+        transition: transform 0.3s ease;
       }
-      .arrow {
-        transition: transform 0.25s ease;
+      details.faq summary img {
+        transition: transform 0.3s ease;
       }
       details.faq p {
         margin-top: 12px;
@@ -908,11 +928,11 @@ Template Name: Test
       }
       @media (max-width: 768px) {
         details.faq summary {
-          font-size: 12px !important;
+          font-size: 14px !important;
           line-height: 18px !important;
         }
         details.faq p {
-          font-size: 12px !important;
+          font-size: 14px !important;
           line-height: 18px !important;
         }
         .hero-row {
@@ -956,6 +976,20 @@ Template Name: Test
           line-height: var(--body-line) !important;
         }
       }
+            summary::-webkit-details-marker {
+        display: none;
+        }
+
+        /* Firefox / 现代浏览器 */
+        summary::marker {
+        content: '';
+        }
+
+        /* 避免 Safari 当成原生控件 */
+        summary {
+        -webkit-appearance: none;
+        appearance: none;
+        }
     </style>
 
   <body>
@@ -1040,6 +1074,7 @@ Template Name: Test
 
             <div class="hero-col">
               <!-- 手机版显示的优惠横幅 -->
+               <div>
               <section class="section marquee-mobile container">
                 <div class="marquee-inner">
                   <div
@@ -1083,6 +1118,7 @@ Template Name: Test
                   src="https://www.snakethedrain.com/wp-content/uploads/2025/10/hero_img.png"
                   alt="Snake The Drain team photo"
                 />
+              </div>
               </div>
             </div>
           </div>
@@ -1403,7 +1439,7 @@ Template Name: Test
                   >What kind of Suffolk County plumbing services do you
                   offer?</span
                 >
-                <span class="arrow">⌄</span>
+                <img src="https://www.snakethedrain.com/wp-content/uploads/2025/10/down-arrow.svg" alt="Snake The Drain Logo" />
               </summary>
               <p>
                 We offer a comprehensive range of plumbing services, including
@@ -1420,7 +1456,7 @@ Template Name: Test
                   >Do you offer emergency plumbing services on Long
                   Island?</span
                 >
-                <span class="arrow">⌄</span>
+                <img src="https://www.snakethedrain.com/wp-content/uploads/2025/10/down-arrow.svg" alt="Snake The Drain Logo" />
               </summary>
               <p>
                 Yes, we provide 24/7 emergency plumbing services across Long
@@ -1435,7 +1471,7 @@ Template Name: Test
                 <span
                   >How much do your plumbing services cost on Long Island?</span
                 >
-                <span class="arrow">⌄</span>
+                <img src="https://www.snakethedrain.com/wp-content/uploads/2025/10/down-arrow.svg" alt="Snake The Drain Logo" />
               </summary>
               <p>
                 We offer upfront pricing with no hidden fees, so you'll know the
@@ -1448,7 +1484,7 @@ Template Name: Test
             <details class="faq">
               <summary>
                 <span>What neighborhoods Do You Serve?</span>
-                <span class="arrow">⌄</span>
+                <img src="https://www.snakethedrain.com/wp-content/uploads/2025/10/down-arrow.svg" alt="Snake The Drain Logo" />
               </summary>
               <p>
                 We’re proud to offer 24/7 plumbing services across every corner
@@ -1468,7 +1504,7 @@ Template Name: Test
                 <span
                   >Are your plumbers licensed and insured on Long Island?</span
                 >
-                <span class="arrow">⌄</span>
+                <img src="https://www.snakethedrain.com/wp-content/uploads/2025/10/down-arrow.svg" alt="Snake The Drain Logo" />
               </summary>
               <p>
                 Yes, all of our plumbers are licensed and insured to ensure that
@@ -1481,7 +1517,7 @@ Template Name: Test
             <details class="faq">
               <summary>
                 <span>Why is Snake the Drain the best plumber near you?</span>
-                <span class="arrow">⌄</span>
+                <img src="https://www.snakethedrain.com/wp-content/uploads/2025/10/down-arrow.svg" alt="Snake The Drain Logo" />
               </summary>
               <p>
                 Snake The Drain is the best Suffolk County plumber because of
@@ -1497,7 +1533,7 @@ Template Name: Test
 
           <div class="cta-card" aria-label="Call to action">
             <div class="cta-media">
-              <img src="https://www.snakethedrain.com/wp-content/uploads/2025/10/hero_img.png" alt="Plumber at work" />
+              <img src="https://www.snakethedrain.com/wp-content/uploads/2025/10/CTA.png" alt="Plumber at work" />
             </div>
             <div class="cta-content">
               <div class="cta-eyebrow">Ready to Help</div>
