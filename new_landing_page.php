@@ -192,6 +192,9 @@ Template Name: Test
         align-items: center;
         gap: 12px;
       }
+      .fui-container{
+        max-width: 1200px !important
+      }
 
       /* ===== Buttons ===== */
       .btn,
@@ -215,8 +218,11 @@ Template Name: Test
         .btn,
         .btn-pill {
           background: none !important;
-          padding: 6px 0;
+          padding: 0;
           width: 100%;
+        }
+        .nav-inner{
+          padding: 16px 24px !important;
         }
       }
       /* Only .btn gets yellow background and custom hover */
@@ -295,6 +301,7 @@ Template Name: Test
           flex-direction: column;
           align-items: center;
           justify-content: center;
+          gap: 18px !important
         }
         .hero-col {
           align-items: center;
@@ -315,7 +322,13 @@ Template Name: Test
           margin-right: auto;
         }
         .hero {
-          padding: 0px 0px 40px 0px !important;
+          padding: 0px !important;
+        }
+        .lead-form-iframe{
+            min-height: 1200px !important;
+        }
+         .hero-col{
+            gap: 8px !important
         }
       }
       .google-badge {
@@ -362,16 +375,23 @@ Template Name: Test
         font-weight: 500;
         text-align: left;
       }
+      .call-to-action-button{
+        margin-top: 24px
+      }
 
       @media (max-width: 768px) {
         .eyebrow {
-          font-size: 22px !important;
+          font-size: 20px !important;
+          line-height: 30px !important;
           text-align: center !important;
         }
         .hero-title {
-          font-size: 38px !important;
+          font-size: 30px !important;
           text-align: center !important;
           line-height: 40px !important;
+        }
+        .call-to-action-button{
+          margin-top: 0px !important;
         }
       }
 
@@ -405,7 +425,10 @@ Template Name: Test
         .hero-image {
           width: 100% !important;
           max-width: 100% !important;
-        border-radius: 0px !important;
+          border-radius: 0px !important;
+        }
+        .hero--award-image{
+            width: 60% !important;
         }
       }
       .hero-image img {
@@ -461,13 +484,15 @@ Template Name: Test
       @media (max-width: 768px) {
         @keyframes scroll-mobile {
           from {
-            transform: translateX(300%);
+            transform: translateX(0);
           }
           to {
-            transform: translateX(-300%);
+            transform: translateX(-600%);
           }
         }
-        
+        .marquee-mobile .marquee-track {
+          animation: scroll-mobile 10s linear infinite !important;
+        }
       }
 
       /* ===== Contact (占位图) ===== */
@@ -638,13 +663,13 @@ Template Name: Test
         .service-card {
           flex-direction: row !important;
           align-items: center !important;
-          gap: 16px !important;
+          gap: 8px !important;
           min-height: 100px !important;
           padding: 16px !important;
         }
         .service-icon {
-          width: 56px !important;
-          height: 56px !important;
+          min-width: 70px !important;
+          min-height: 70px !important;
           margin-right: 12px !important;
         }
         .service-name {
@@ -724,6 +749,7 @@ Template Name: Test
         .why-point {
           font-size: 14px !important;
           line-height: 20px !important;
+          gap: 4px !important;
         }
 
 
@@ -816,7 +842,7 @@ Template Name: Test
         justify-content: space-between;
         align-items: center;
         gap: 12px;
-        font-size: 16px;
+        font-size: 18px;
         line-height: 24px;
         font-weight: 500;
         text-align: left;
@@ -831,7 +857,7 @@ Template Name: Test
       details.faq p {
         margin-top: 12px;
         color: #e5e7eb;
-        font-size: 16px;
+        font-size: 18px;
         line-height: 24px;
       }
 
@@ -858,7 +884,7 @@ Template Name: Test
       .cta-content {
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: 14px;
         justify-content: center;
         padding: 40px;
         background: url("https://www.snakethedrain.com/wp-content/uploads/2025/10/bg.png") center center/cover no-repeat;
@@ -965,7 +991,7 @@ Template Name: Test
         .cta-content {
           background: none !important;
           padding: 40px 0px;
-          gap: 20px !important;
+          gap: 8px !important;
         }
         .cta-title {
           font-size: var(--h3) !important;
@@ -1045,8 +1071,8 @@ Template Name: Test
                 </h1>
               </div>
 
-              <div class="">
-                <img src="https://www.snakethedrain.com/wp-content/uploads/2025/10/award_wrap.png" alt="Snake The Drain Logo" />
+              <div style="hover: cursor: pointer;" class="hero--award-image">
+                  <img src="https://www.snakethedrain.com/wp-content/uploads/2025/10/award_wrap.png" alt="Snake The Drain Logo" />
               </div>
 
               <div class="">
@@ -1075,7 +1101,7 @@ Template Name: Test
             <div class="hero-col">
               <!-- 手机版显示的优惠横幅 -->
                <div>
-              <section class="section marquee-mobile container">
+              <section class="section marquee-mobile container" style="max-width: 100vw !important, padding: 0px !important" >
                 <div class="marquee-inner">
                   <div
                     class="marquee-track"
@@ -1115,7 +1141,7 @@ Template Name: Test
                 aria-label="Snake The Drain team photo"
               >
                 <img
-                  src="https://www.snakethedrain.com/wp-content/uploads/2025/10/hero_img.png"
+                  src="https://www.snakethedrain.com/wp-content/uploads/2025/10/hero_pc_mobile.png"
                   alt="Snake The Drain team photo"
                 />
               </div>
@@ -1169,10 +1195,12 @@ Template Name: Test
               ></script>
               <iframe
                 id="hcp-lead-iframe"
+                class="lead-form-iframe"
                 src="https://book.housecallpro.com/lead-form/Snake-the-drain-plumbing/1c5511b762274b7eb304222be79acf78"
                 style="border: none; width: 100%; min-height: 950px"
                 allowfullscreen
                 loading="lazy"
+                scrolling="no"
               >
               </iframe>
             </div>
@@ -1416,7 +1444,7 @@ Template Name: Test
               aria-label="Plumber working on site"
             >
               <img
-                src="https://www.snakethedrain.com/wp-content/uploads/2025/10/why_choose_side_img.png"
+                src="https://www.snakethedrain.com/wp-content/uploads/2025/10/service_new_img.png"
                 alt="Plumber working on site"
               />
             </div>
@@ -1436,7 +1464,7 @@ Template Name: Test
             <details class="faq">
               <summary>
                 <span
-                  >What kind of Suffolk County plumbing services do you
+                  >What Suffolk County plumbing services do you
                   offer?</span
                 >
                 <img src="https://www.snakethedrain.com/wp-content/uploads/2025/10/down-arrow.svg" alt="Snake The Drain Logo" />
@@ -1544,7 +1572,7 @@ Template Name: Test
                 Fast, reliable plumbing solutions are just one call away. Let
                 our experts take care of your home today.
               </div>
-              <div>
+              <div class="call-to-action-button">
                 <a
                   href="tel:+16316418735"
                   class="btn"
