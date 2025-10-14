@@ -1,7 +1,30 @@
 <?php
 /*
-Template Name: Test
+Template Name: call-now-lp
  */
+add_action('wp_head', function () {
+  $title = '24/7 Long Island Plumbers | Same-Day Quotes & Service | Snake The Drain';
+  $desc  = 'Trusted Long Island plumbers providing same-day quotes and service: drain cleaning, sewer cleaning, hydro jetting, pipe repair. Call (631) 641-8735.';
+  $url   = esc_url( get_permalink() );
+  $img   = 'https://www.snakethedrain.com/wp-content/uploads/2025/10/hero_pc_mobile_new.jpg'; // 任意清晰首屏图
+  ?>
+  <title><?php echo esc_html($title); ?></title>
+  <meta name="description" content="<?php echo esc_attr($desc); ?>" />
+  <link rel="canonical" href="<?php echo $url; ?>" />
+  <meta name="robots" content="index,follow" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="<?php echo esc_attr($title); ?>" />
+  <meta property="og:description" content="<?php echo esc_attr($desc); ?>" />
+  <meta property="og:url" content="<?php echo $url; ?>" />
+  <meta property="og:image" content="<?php echo esc_url($img); ?>" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="<?php echo esc_attr($title); ?>" />
+  <meta name="twitter:description" content="<?php echo esc_attr($desc); ?>" />
+  <meta name="twitter:image" content="<?php echo esc_url($img); ?>" />
+  <?php
+}, 1);
 ?>
 <?php get_header(); ?>
 
@@ -421,15 +444,16 @@ Template Name: Test
         overflow: hidden;
         aspect-ratio: 1/1; /* 无固定高度 */
       }
+        .hero--award-image{
+            width: 60% !important;
+        }
       @media (max-width: 768px) {
         .hero-image {
           width: 100% !important;
           max-width: 100% !important;
           border-radius: 0px !important;
         }
-        .hero--award-image{
-            width: 60% !important;
-        }
+
       }
       .hero-image img {
         width: 100%;
@@ -1067,12 +1091,12 @@ Template Name: Test
               <div>
                 <div class="eyebrow">Same Day Quotes and Service</div>
                 <h1 class="hero-title">
-                  <span class="accent">Expert Plumbers</span> On Long Island
+                  <span class="accent">Expert Plumbers</span> <br> On Long Island
                 </h1>
               </div>
 
               <div style="hover: cursor: pointer;" class="hero--award-image">
-                  <img src="https://www.snakethedrain.com/wp-content/uploads/2025/10/award_wrap.png" alt="Snake The Drain Logo" />
+                  <img src="https://www.snakethedrain.com/wp-content/uploads/2025/10/google_final.png" alt="Snake The Drain Logo" />
               </div>
 
               <div class="">
@@ -1141,7 +1165,7 @@ Template Name: Test
                 aria-label="Snake The Drain team photo"
               >
                 <img
-                  src="https://www.snakethedrain.com/wp-content/uploads/2025/10/hero_pc_mobile.png"
+                  src="https://www.snakethedrain.com/wp-content/uploads/2025/10/hero_pc_mobile_new.jpg"
                   alt="Snake The Drain team photo"
                 />
               </div>
@@ -1199,7 +1223,6 @@ Template Name: Test
                 src="https://book.housecallpro.com/lead-form/Snake-the-drain-plumbing/1c5511b762274b7eb304222be79acf78"
                 style="border: none; width: 100%; min-height: 950px"
                 allowfullscreen
-                loading="lazy"
                 scrolling="no"
               >
               </iframe>
